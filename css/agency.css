@@ -50,7 +50,7 @@ h6 {
   margin: 0 auto;
 }
 .bg-light-gray {
-  background-color: #f6f7f7;/*#f8f8f8*//*#f7f6f4*/
+  background-color: #f6f7f7;
 }
 .bg-darkest-gray {
   background-color: #222222;
@@ -656,7 +656,7 @@ ul.social-buttons li a:active {
 .portfolio-modal .modal-dialog {
   margin: 0;
   height: 100%;
-  width: 100%;
+  width: auto;
 }
 .portfolio-modal .modal-content {
   border-radius: 0;
@@ -744,6 +744,7 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #fed136;
 }
+
 
 
 /*Newly Added: iframe*/
