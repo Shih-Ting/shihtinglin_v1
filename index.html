@@ -1,1090 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113069949-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-113069949-1');
-</script>
-
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="An economist chasing an HCI dream:)">
-  <meta name="author" content="">
-  <title>Shih-Ting Lin, Interaction | UX Designer</title>
-  <!-- Bootstrap Core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom Fonts -->
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
-  <!-- Theme CSS -->
-  <link href="css/agency.min.css" rel="stylesheet">
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media
-    queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file://
-    -->
-  <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  <link rel="icon" href="img/portfolio/favicon.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-  <style type="text/css">
-    .modal{
-      width: 100vw;
-      height: 100vh;
-    }
-  </style>
+    <meta charset="utf-8">
+    <title>Shih-Ting (Amy) Lin, Interaction | UX Designer</title>
+    <!-- JS jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- clickable image with z-index -->
+    <script>
+    $('.photo-cell img').on('click', function() {
+        var newURL = $('a', this).prop('href');
+        window.location = newURL;
+    });
+    // $('.page-scroll li').on('click', function() {
+    //     var navURL = $('a', this).prop('href');
+    //     window.location = navURL ;
+    // });
+    </script>
+    <!-- Define keywords for search engines -->
+    <meta name="keywords" content="Interaction Designer,Shih-Ting (Amy) Lin, Shih-Ting Lin, UX, Amy Lin">
+    <meta name="description" content="Hi, there! My name is Shih-Ting but I go by Amy. I'm a rational but passionate Interaction Designer!">
+    <meta name="author" content="Shih-Ting (Amy) Lin">
+    <!-- Set the viewport to make website look good on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="icon" href="img/portfolio/favicon.png">
+    <!-- Custom Fonts -->
+    <!-- FontAwesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+    <!-- Barlow -->
+    <link href="https://fonts.googleapis.com/css?family=Barlow:400,700,300,100,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- Montserrat -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <!-- Droid Serif -->
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- Roboto -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+    <!-- My CSS stylesheet-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
 </head>
 
-<body id="page-top" class="index">
-  <!-- Navigation -->
-  <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header page-scroll">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span>Menu <i class="fa fa-bars"></i> </button>
-        <a class="navbar-brand page-scroll" href="#page-top">Shih-Ting Lin</a>
-      </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="hidden">
-            <a href="#page-top"></a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#portfolio">Portfolio</a>
-          </li>
-          <li>
-            <a href="#services" class="page-scroll">Belief</a>
-          </li>
-          <li>
-            <a href="#about" class="page-scroll">Experience</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#team">About</a>
-          </li>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-  </nav>
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <div class="intro-text">
-        <div class="intro-lead-in">Welcome to Shih-Ting's Place!</div>
-        <div class="intro-heading">Let's See What She's Got!</div>
-        <a href="#portfolio" class="page-scroll btn btn-xl">I Want More</a>
-      </div>
-    </div>
-  </header>
-  <!-- Portfolio Grid Section -->
-  <section id="portfolio"  class="bg-light-gray">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Portfolio</h2>
-          <h3 class="section-subheading text-muted">When the mind goes wild.</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content"> <i class="fa fa-3x -circle fa-heart-o"></i> </div>
+<body>
+    <header id="top">
+        <nav class="top-nav" id="top-nav">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo/logo.png" alt="Shih-Ting's logo"></a>
             </div>
-            <img src="img/portfolio/LDR.png" class="img-responsive" alt=""> </a>
-          <div class="portfolio-caption">
-            <h4>FDC for LDR Couples</h4>
-            <p class="text-muted">Interaction Design</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content"> <i class="fa fa-3x fa-laptop"></i> </div>
+            <div id="menu">
+                <ul>
+                    <li><a class="page-scroll current-page" href="#portfolio">WORK</a></li>
+                    <li><a class="page-scroll" href="about.html">ABOUT</a></li>
+                    <li><a class="page-scroll" href="AthleteJuvo.html">AWARD</a></li>
+                    <!-- new -->
+                    <li><a class="page-scroll" href="graphic.html">FUN</a></li>
+                    <!-- <li><a class="page-scroll" href="#belief">BELIEF</a></li> -->
+                    <!-- <li><a class="page-scroll" href="https://drive.google.com/file/d/13_UM4s0KL3TSjHBUeWdHWihlupRX1BIK/view?usp=sharing">RESUME</a></li> -->
+                    <!-- <li><a href="index.html#portfolio" id="nav-p">Portfolio</a></li> -->
+                </ul>
             </div>
-            <img src="img/portfolio/TBP.png" class="img-responsive" alt=""> </a>
-          <div class="portfolio-caption">
-            <h4>The Brides Project</h4>
-            <p class="text-muted">UX Research / Service Design</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content"> <i class="fa fa-3x -circle fa-eye"></i> </div>
+        </nav>
+    </header>
+    <div id="main-content" class="main-content main-content-pieces">
+        <div id="intro" class="intro">
+            <div class="container">
+            <img src="img/header-bg.JPG" alt="Hello! It's Shih-Ting!">
+            <div class="centered">
+                <h1 style="color:#fff;">Shih-Ting (Amy) Lin</h1>
+                <h2 style="color:#fff;">Design | Choice Architecture | Passion</h2>
             </div>
-            <img src="img/portfolio/AthleteJuvo.png" class="img-responsive" alt=""> </a>
-          <div class="portfolio-caption">
-            <h4>CHI 2018: AthleteJuvo</h4>
-            <p class="text-muted">Interaction Design / UX Research</p>
-          </div>
+            <div>
         </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content"> <i class="fa fa-3x fa-play-circle"></i> </div>
+        <section class="work" id="portfolio">
+            <h1>WORK</h1>
+            <h2>When the mind goes wild.</h2>
+            <div class="photo-list">
+                <div class="photo-grid">
+                    <a href="FDC.html">
+                        <div id="item1" class="photo-cell">
+                            <!-- <div id="main-content" class="main-content"> -->
+                            <img src="img/portfolio/LDR.png" class="img-responsive" alt="FDC for LDR Couples">
+                            <!-- <div class="overlay">
+                                    <div class="text">FDC: Interaction Design<div>
+                                </div> -->
+                        </div>
+                    </a>
+                    <!-- <div id="caption1" class="photo-cell">
+                            <h3>FDC for LDR Couples</h3>
+                            <h4>Interaction Design</h4>
+                        </div> -->
+                </div>
+                <div class="photo-grid">
+                    <a href="TBP.html">
+                        <div id="item2" class="photo-cell">
+                            <!-- <div id="main-content" class="main-content"> -->
+                            <img src="img/portfolio/TBP.png" class="img-responsive" alt="The Brides Project">
+                        </div>
+                        <!-- <div id="caption2" class="photo-cell">
+                                <h3>The Brides Project</h3>
+                                <h4>UX Research / Service Design</h4>
+                            </div> -->
+                    </a>
+                </div>
+                <div class="photo-grid">
+                    <a href="AthleteJuvo.html">
+                        <div id="item3" class="photo-cell">
+                            <img src="img/portfolio/AthleteJuvo.png" alt="AthleteJuvo">
+                        </div>
+                    </a>
+                </div>
+                <div class="photo-grid">
+                    <a href="graphic.html">
+                        <div id="item4" class="photo-cell">
+                            <img src="img/portfolio/play.png" class="img-responsive" alt="Graphic Design">
+                        </div>
+                    </a>
+                </div>
+                <div class="photo-grid">
+                    <a href="Microsoft.html">
+                        <div id="item5" class="photo-cell">
+                            <img src="img/portfolio/microsoft.jpg" class="img-responsive" alt="Microsoft internship">
+                        </div>
+                    </a>
+                </div>
+                <div class="photo-grid">
+                    <a href="activities.html">
+                        <div id="item6" class="photo-cell">
+                            <img src="img/portfolio/universe_of_words.jpg" class="img-responsive" alt="Life outside classroom">
+                        </div>
+                    </a>
+                </div>
             </div>
-            <!-- <img src="img/portfolio/color scheme.jpg" class="img-responsive" alt=""> </a> -->
-            <img src="img/portfolio/play.png" class="img-responsive" alt=""> </a>
-            
-          <div class="portfolio-caption">
-            <h4>Play with Images</h4>
-            <p class="text-muted">Graphic Design</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content"> <i class="fa fa-3x fa-hand-o-up"></i> </div>
-            </div>
-            <img src="img/portfolio/microsoft.jpg" class="img-responsive" alt=""> </a>
-          <div class="portfolio-caption">
-            <h4>300 Days of Microsoft</h4>
-            <p class="text-muted">Microsoft Internship Sharing</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content"> <i class="fa fa-3x -circle fa-trophy"></i> </div>
-            </div>
-            <img src="img\portfolio\universe of words.jpg" class="img-responsive" alt=""> </a>
-          <div class="portfolio-caption">
-            <h4>Steps along the Way</h4>
-            <p class="text-muted">Life Outside Classrooms</p>
-          </div>
-        </div>
-      </div>
+        </section>
     </div>
-  </section>
-  <!-- Services Section -->
-  <section id="services"> <!--  class="bg-light-gray" -->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Belief</h2>
-          <h3 class="section-subheading text-muted">I believe, so I am.</h3>
-        </div>
-      </div>
-      <div class="row text-center">
-        <div class="col-md-4"> <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-stack-1x fa-inverse fa-bolt"></i>
-            </span>
-          <h4 class="service-heading">Proactivity</h4>
-          <p class="text-muted">We can always do something more to make a difference and be the change we want to be.</p>
-        </div>
-        <div class="col-md-4"> <span class="fa-stack fa-4x">
-            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-            <i class="fa fa-stack-1x fa-inverse s fa-angellist"></i>
-          </span>
-          <h4 class="service-heading">Diversity</h4>
-          <p class="text-muted">I cherish the mix of voices I can hear because that's what makes us unique as an idividual.</p>
-        </div>
-        <div class="col-md-4"> <span class="fa-stack fa-4x">
-          <i class="fa fa-circle fa-stack-2x text-primary"></i>
-          <i class="fa fa-stack-1x fa-inverse fa-diamond"></i>
-        </span>
-          <h4 class="service-heading">Perseverance</h4>
-          <p class="text-muted">I won't give up. I won't give in 'til I reach the end. Then, I'll start again.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- About Section -->
-  <section id="about"  class="bg-light-gray">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Experience</h2>
-          <h3 class="section-subheading text-muted">Connecting the dots.</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <ul class="timeline">
-            <li>
-              <div class="timeline-image">
-                <img class="img-circle img-responsive" src="img/about/ntuecon.jpg" alt=""> </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>NTU Econ S.A.</h4>
-                  <h4 class="subheading">PR Chair</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">● Organized the first cross-college prom for 300+ freshmen from 6 departments</p>
-                  <p class="text-muted">● Convinced 3 corporations into sponsor Econ Night, saving USD 1000+, historically high on the department</p>
-                  <p class="text-muted">● Boosted Facebook post likes by 1000+ within 2 weeks for student event sponsors</p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <img class="img-circle img-responsive" src="img/about/ta.jpg" alt=""> </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>National Taiwan University</h4>
-                  <h4 class="subheading">Teaching Assistant</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">● Doubled student interaction during class discussion</p>
-                  <p class="text-muted">● Conducted a camp with 20+ students for 15+ elementary school students from vulnerable families</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="timeline-image">
-                <img class="img-circle img-responsive" src="img/about/microsoft1.jpg" alt=""> </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>Microsoft</h4>
-                  <h4 class="subheading">Marketing Administrative Assistant</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">● Increased the attendance rate of partner seminars &amp; technical workshops by 50% within 6 months</p>
-                  <p class="text-muted">● Directed a film for Microsoft Internship Facebook page, gaining 6000+ views within 3 days</p>
-                  <p class="text-muted">● Handled 30+ seminars/workshops registration and materials for 1000+ technical and sales partners</p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <img class="img-circle img-responsive" src="img/about/umich.png" alt=""> </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>University of Michigan</h4>
-                  <h4 class="subheading">Instructional Aide</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">● Help with in-class behavioral experiments</p>
-                  <p class="text-muted">● Grade assignments on Choice Architecture, advanced course of Game Theory at the School of Information</p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <h4>DROP
-                  <br>A DOT
-                  <br>HERE!</h4>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Team Section -->
-  <section id="team">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center col-lg-12">
-          <h2 class="section-heading">About</h2>
-          <h3 class="section-subheading text-muted">A Rational Designer, Passionate about Incorporating Choice Architecture into Design</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="team-member">
-            <img src="img\team\profile.jpg" class="img-circle img-responsive" alt="">
-            <h4>Shih-Ting (Amy) Lin</h4>
-            <p class="text-muted">amystlin@umich.edu
-              <br> </p>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="portfolio-caption">
-            <h5 class="text-left">Hey there, it's Shih-Ting!</h5>
-            <p class="text-muted">My name is Shih-Ting but I go by Amy. I'm a rational interaction designer with a diverse background, including 4-year training in <strong>economics, Chinese-English translation and interpreation</strong>, in addition to <strong>design.</strong> I enjoy seeing the world from various points of view and synthesize them into my design.
-              <br>Currently, I'm a Master's Student at the University of Michigan, focusing on HCI and looking for summer internship. Feel free to check out my
-              <a href="https://drive.google.com/file/d/13_UM4s0KL3TSjHBUeWdHWihlupRX1BIK/view?usp=sharing">resume</a> or shoot me an
-              email if you're interested in being impressed. I'm always happy to chat!
-              <br>
-              <br> <strong>Fields I specialize in:</strong>
-              <br> Interaction Design / Incentive Design / Visual Design / Prototyping / Contextual Inquiry / Content Strategies / Marketing (B2B) / Localization / Interpretation (Consecutive &amp; Simultaneous)
-              <br> <strong>Things I'd love to do:</strong>
-              <br> Brainstorming / Public Speaking / Sketching / Dancing
-              <br> <strong>Constantly learning:</strong>
-              <br> Programming (Python/Java/HTML/CSS) / Experimental &amp; Behavioral Economics / UX Design &amp; Research / Cooking Great Food </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer class="bg-light-gray">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4"> <span class="copyright">© 2016-2018 Created by Shih-Ting Lin</span> </div>
-      </div>
-    </div>
-  </footer>
-  <!-- Portfolio Modals -->
-  <!-- Use the modals below to showcase details about your portfolio projects!-->
-  <!-- Portfolio Modal 1 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
+    <!-- <hr>
+        <section class="belief" id="belief">
+                <h1>BELIEF</h1>
+                <h2>I believe, so I am.</h2>
+                <svg height="200" width="200">
+                    <circle cx="50" cy="50" r="50" fill="#EF8AA5" />
+                </svg>
+        </section>
+    </div> -->
+    <footer style="text-align:center; height:80px; border-top: 5px dashed #ccc; line-height:80px;">
+        <!-- border-top: 1px solid #eee; -->
         <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-center">FDC for LDR Couples</h2>
-                <h3 class="text-capitalize text-center">Interaction Design</h3>
-                <p class="item-intro text-muted text-left">Are you in an LDR? Feel your partner even when you’re apart!
-                  <br> Couples in LDR are no different from normal couples – we also crave for a sense of intimacy, which often times comes from the sense of touch. </p>
-                <img class="img-responsive img-centered" src="img/portfolio/FDC_LDR.png" alt="">
-                <h4 class="text-left text-capitalize">Some Background Information</h4>
-                <br>
-                <p class="text-justify">FDC for LDR Couples is <strong>a 12-week individual project</strong> in which I was given full flexibility to use <i>any technology</i> and UX research method to solve <i>any problem.</i> Due to the difficulties I faced when I first started a long-distance relationship (LDR), I decided to <strong>tackle the sense of intimacy sacrificed because of the distance</strong> with <strong>the power of technology</strong>.</p>
-                <br>
-                <h4 class="text-left text-capitalize">Problem Statement</h4>
-                <br>
-                <p class="text-justify"> As people are growing up, we might be faced with the dilemma between pursuing a career/degree and maintaining a romantic relationship with our special someone. To strike a balance between the two, more and more people start a long-distance
-                  relationship (LDR). The up side of it is that we have more time and personal space to enjoy our lives and spend time with friends and family while the down side is that <strong>we have to endure the days of loneliness, not being able to hug
-                  each other or just to hold hands on a bad day.</strong> </p>
-                <p class="text-justify"> As technology advances, we can now text or video-chat with our partner to share every little thing that happen around us at approximately the same time. Still, the means of interaction might
-                  be <i>limited to words and stickers.</i> <strong>Physical interactions and hence the playfulness might be sacrificed.</strong></p>
-                <br>
-                <h4 class="text-left text-capitalize">Solution Overview</h4>
-                <br>
-                <p class="text-justify"> Face Dance Challenge (FDC) is <i>originally a mobile-based application/game</i> that allows users to score by changing their facial expression according to the emojis that show up on screen. However, in this version of FDC, it isn’t a mobile
-                  application itself. Instead, it’s designed to be <strong>an extension in the Facebook Messenger</strong>, aiming to spice up interaction between couples in LDRs. The design of FDC is <i>based on the video-chat and gaming feature that Messenger already supports.</i>
-                  However, it also allows physical interaction and the sense of touch to be <strong>transmitted via the vibration or haptic feedback of iPhones.</strong> Namely, FDC is a game that features <strong>a combination of image, sound and physical interaction.</strong> This combination
-                  makes up for the problem that couples in LDRs create less shared memories due to geographic barriers. By playing games while video chatting, couples can <strong>see each other’s facial expression and listen to their screams and laughter as if
-                  they were on each other’s sides.</strong> </p>
-                <div class="invision">
-                  <iframe src="https://invis.io/6SERY10CF" frameborder="0" align="center" height="1000" width="100%"> </iframe>
-                </div>
-                <br>
-                <h4 class="text-left text-capitalize">Design Process</h4>
-                <br>
-                <!-- Problem Exploration -->
-                <p class="text-justify"> At the problem exploration stage, I went through several boards of a popular BBS forum in Taiwan, called PTT, which has conserved online discussion data <strong>for more than 20 years.</strong> The boards I referred to includes Boy-Girl, Sex and Long-Distant. The user research method I used is <strong>a mixure of diary study and semi-constructed interview</strong> -- I read through all the discussions that contains <i>key words like long distance relationship and problems</i> to identify the difficulties LDR couples face. Eventually, I found that not only sentimental communication but also <strong>physical interactions play a significant role in relationships.</strong> </p>
-                <img class="img-responsive img-centered" src="img/portfolio/competitive _analysis.png" alt="competitive analysis">
-                <p class="text-center"> <i>Competitive Analysis</i> </p>
-                <p class="text-justify"> Before I jump into the solution, I also did a competitive analysis on the current technological solutions available on the market. What surprised me was that despite the large number of LDR couples, <strong>all the software solutions I found on
-                  the market target couples who can meet relatively frequently.</strong> Hence, the features of these solutions are based on storing created memories. Sadly, for LDR couples, if they cannot meet their partners in person, memories can be hard to
-                  create. In that sense, these couples depend on contemplating on their good old days to maintain their attraction with their partners. </p>
-                <p class="text-justify"> With these findings in mind, the final scope of my project was set – <strong>(1) spicing up the interactions between couples, physical interactions included</strong> and <strong>(2) create something that is shared between these partners.</strong></p>
-                <!-- Solution Ideation -->
-                <img class="img-responsive img-centered" src="img/portfolio/brainstorm.png" alt="brainstorm/solution ideation">
-                <p class="text-justify">After my project scope was defined, over the following design process, my solution focus has always been on the improvement of physical interaction between LDR couples. During ideation, I came up with <strong>8 potential solutions</strong> to the problem. Interestingly, almost all the ideas I came up with <i>require the users to buy extra products or services</i> such as gloves, meals or a sensor. Nonetheless, I have always <strong>kept the welfare of my target users in my mind and wanted to benefit as many couples in LDR as I do as possible</strong>, which
-                  is the reason why I <strong>choose Messenger</strong> as the foundation of my final solution. </p>
-                <img class="img-responsive img-centered" src="img/portfolio/persona.png" alt="persona">
-                <p class="text-center"> <i>Wayne, Mina and Jeffery are Pro-personas while Tina is an Anti-persona.</i> </p>
-                <p class="text-justify">To further identify my target users, I built 4 personas, including<strong> 3 pro-persona and 1 anti-persona.</strong> All of these personas are <strong>based on the discussions I read on the PTT forum, which are all true stories.</strong></p>
-                <img class="img-responsive img-centered" src="img/portfolio/storymap.png" alt="user storymap">
-                <p class="text-justify">To check the validity of my final solution, I went through <strong>story-mapping to model user activities and their current potential ways of interacting with their couples.</strong> Finally, I <strong>iterate through <a href="https://drive.google.com/file/d/1JbCkS40tbirPz-eXj--dZ51ZmK9kenL9/view?usp=sharing">3 rounds of QOCs (Question, Options and Criteria)</a></strong> to explore the potential key features I want to include in my final design as well as how these features will be presented. </p>
-                <!-- User Test & Iteration -->
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/UCPuFhtKV34" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
-                <p class="text-center"> <i>Low-fi prototype demonstration</i> </p>
-                <p class="text-justify">With clearer picture of how my final design would be like, I started to work on my low-fi prototypes that <strong>models 10 tasks and 15+ interactions</strong> I would like to test. </p>
-                <br>
-                <h4 class="text-left text-capitalize">Major Design Change</h4>
-                <img class="img-responsive img-centered" src="img/portfolio/major design change.png" alt="major design change">
-                <p class="text-justify"> The biggest design change occurred during my first user test on paper prototypes when <strong>my user told me that she had no idea that couples playing FDC are in charge of one side of the facial expression</strong> despite the instruction provided before the game starts. </p>
-                <p class="text-justify">In the original design, the emoji would fly into the screen vertically from the bottom side of the screen. Since my user was <strong>confused about how to react when she saw an emoji flying on the other side of the screen,</strong> I decided that emoji would always fly in the middle from the bottom, <i>which sacrifice the level of difficulty but improves the interaction.</i> </p>
-                <br>
-                <h4 class="text-left text-capitalize">Iterations</h4>
-                <p class="text-justify">From the brainstorming to prototyping, <strong>I’m always thinking about my design.</strong> Whenever I have a new idea in my mind, I always talk to my boyfriend about it and discuss the pros and cons of it. Especially when I’m working on high-fi prototypes,
-                  I <strong>come up with new designs every day</strong> and usually spend more than a half of prototyping time to refine the design I made earlier. Generating new ideas every day was hard; however, it turned out that I do have <strong>made a lot of breakthroughs
-                  in terms of the visual representation as well as the interactions between screens and users.</strong> For instance, at first, the only way for my users to switch between screens was by tapping on the space on the screen but as I discovered more
-                  about InVision, I eventually <i>set timer to switch between screens to make the motion of flying emoji much similar to how it would work in reality. </i></p>
-                <h4 class="text-left text-capitalize">One Step Further</h4>
-                <br>
-                <img class="img-responsive img-centered" src="img/portfolio/incentives.png" alt="design philosophy">
-                <p class="text-center"> <i>Incentive-increasing features</i> </p>
-                
-                <p class="text-justify">My design philosophy has always been <strong>“People respond to incentives.”</strong> Aside from maintaining consistency across the whole project, I always think one step further as of how to <strong>make my design appealing and attractive in the long run.</strong> Thus, an explicit feature that has to do with incentive-creating is the mechanism that <strong>couples can unlock more interactions as they score more points.</strong> Additionally, I add another line of word hinting the users on how far they are from the
-                  new interaction. Other than that, I want to <strong>avoid LDR couples who play FDC to fight because of the game.</strong> Thus, the mechanism of the game itself awards good teamwork but <strong>if only one of the couple performs well, they can still gain points.</strong>
-                  Through this scoring mechanism, I would like to convey the message that though it’s perfect that we, as a couple, can work well together, if it turns out to be just the opposite, it’s still okay because <strong>one’s strength can help make up for the other’s weakness.</strong></p>
-                <br>
-                <h4 class="text-left text-capitalize">Final Screens</h4>
-                <br>
-                <img class="img-responsive img-centered" src="img/portfolio/FDC_final_screens.jpg" alt="final screens">
-                <br>
-                <h4 class="text-left text-capitalize">Impact</h4>
-                <br>
-                <p class="text-justify">The societal impact I would like to make on couples in LDR is that there’s <strong>no need to be afraid of the distance between them</strong> and their special ones and <strong>it’s okay to run out of things to share</strong> during video-chat. LDR couples are no different from ordinary couples. Though reminiscing the good old days helps them go through the dark lonely nights, <strong>couples can still create new memories in spite of being physically apart.</strong> </p>
-                <p class="text-justify"> Through my design, I want to <strong>inspire more potential or future design for LDR couples</strong> as during my competitive analysis, I found that there’s less existing digital solutions designed just for LDR couples. </p>
-                <br>
-                <h4 class="text-left text-capitalize">Takeaway</h4>
-                <br>
-                <p class="text-justify">The hardest part of going through the design process is not design itself. Instead, for me, it’s <strong>conquering the fear of falling behind.</strong> I’m really fortunate to have Tonya as my instructor to boost me up when I felt that I could not see
-                  my strength in the field of information with an economics background. However, as it turned out, my past-4-year <strong>training in economics does help me think more thoroughly and go one step forward to consider the long-run effect of my product.</strong></p>
-                <h4 class="text-left text-capitalize">Shih-Ting (Amy) in FDC</h4>
-                <li class="text-left list-unstyled"> <strong>My Role</strong> </li>
-                  <ul>
-                  <li class="text-justify">Interaction Designer</li>
-                  <li class="text-justify">UX Researcher</li>
-                  <li class="text-justify">Project Manager</li>
-                </ul>
-                <br>
-                <li class="text-left list-unstyled"> <strong>What I Did</strong> </li>
-                  <ul>
-                  <li class="text-justify">Ideation</li>
-                  <li class="text-justify">UX Research</li>
-                  <li class="text-justify">Storymapping</li>
-                  <li class="text-justify">Low-fi Mockups</li>
-                  <li class="text-justify">High-fi Prototypes</li>
-                <br>
-                <p class="text-center"> </p>
-                <button type="button" class="btn btn-primary" data-dismiss="modal"> <i class="fa fa-times"></i>Close Project</button>
-              </div>
+            <div class="row">
+                <span class="copyright">© 2018 Created by Shih-Ting (Amy) Lin</span>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <!-- Portfolio Modal 2 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-              <div class="modal-body">
-                <h2 class="text-center">The Brides Project</h2>
-                <h3 class="text-capitalize text-center">UX Research, Service Design &amp; Content Strategy</h3>
-                <p class="item-intro text-muted text-left">In this 3-month group project, we, as a team of 4 student consultants, seek to figure out the optimal open hours for The Brides Project, a volunteer-based non-profit bridal shop, using contextual inquiry as well as user research methodology.</p>
-                <img class="img-responsive img-centered" src="img/portfolio/i donate.jpg"
-                  alt="The Brides Project">
-                <h4 class="text-left text-capitalize">Client Overview</h4>
-                <br>
-                <img class="img-responsive img-centered" src="img/portfolio/client overview.png" alt="The Brides Project overview">
-                <p class="text-justify">The Brides Project (TBP) is <strong>a non-profit bridal shop</strong> founded in September of 2011, run by volunteers and a small group of paid, part-time staff. TBP sells previously-worn and donated wedding dresses at discounted retail prices. All of these profits are then used to support local cancer education, counseling, and support programs at the Cancer Support Community (CSC) of Greater Ann Arbor.</p>
-                <br>
-                <h4 class="text-left text-capitalize">Problem Statement</h4>
-                <br>
-                <img class="img-responsive img-centered" src="img/portfolio/assigned problem.png" alt="Assigned Problem">
-                <p class="text-justify">For the past few years, The Brides Project has experienced surging customer demand, which leads to the following problems:</p>
-                <ol> 
-                  <li class="text-justify"><strong>Walk-in Customers:</strong> To fulfill customer demand, since November 2016, The Brides Project has extended open hours and started to accept walk-in customers while maintaining the
-                  by-appointment service.</i>
-                  <li class="text-justify"><strong>Volunteer Base:</strong> Recently, management has been concerned that the existing volunteer base may not be sufficient to support all the changes in open hours and service expansion. 
-                  <li class="text-justify"><strong> Optimal Open Hours:</strong> Management wants us to identify the optimal staffing
-                  model and open hours that will <i>alleviate volunteer burn-out, maintain customer satisfaction, and ultimately drive sales growth of the store.</i>
-                </ol>
-                <br>
-                <h4 class="text-left text-capitalize">Methodology &amp; Research Process</h4>
-                <img class="img-responsive img-centered" src="img/portfolio/TBP_process.png" alt="Research Process">
-                <br>
-                <p class="text-justify">In order to determine the underlying causes of the problem addressed by The Brides Project, our team used various methods to gather detailed and comprehensive data: </p>
-                <ol>
-                <li class="text-justify"><strong>Interview Protocol:</strong> We came up with 4 versions of interview questions based on the assigned problems and target interviewees. 
-                <li class="text-justify"><strong>Interview:</strong> We conducted 7 interviews, including 5 formal interviews with the management and volunteers and 2 semi-constructed interveiws with volunteers in
-                  the bridal shop. The interviews allowed us to <i>gather insights from employees at all levels</i> in the organization. </li>
-                <li class="text-justify"><strong>Files:</strong> After interviewing the director, she provided us with multiple spreadsheets, which included <i>sales data, customer satisfaction surveys and results, and volunteer schedules.</i> </li>
-                <li class="text-justify"><strong>In-store Observation:</strong> While we were in the bridal shop for the interviews, we were constantly aware of the activity that was occurring around us. We also observed <i>an entire shift</i> of a volunteer in order to better understand the consultant process and the relationships between consultants and customers.</li>
-                
-                </ol>
-                <br>
-                <img class="img-responsive img-centered" src="img/portfolio/affinity wall.png" alt="Affinity Wall">
-                <p class="text-justify"> <strong>Affinity Wall:</strong> Following each interview, we held interpretation sessions to discuss our findings and generate affinity wall notes. Each note contained one idea obtained from the interview, and overall, we generated <i>about 300 notes.</i>
-                  </p>
-                <img class="img-responsive img-centered" src="img/portfolio/content-analysis.png" alt="Content Analysis">
-                <p class="text-justify"> <strong>Content Analysis:</strong> We analyzed each post and the overall theme of TBP’s Facebook and Instagram accounts to determine what type of information TBP shares with consumers, how they communicate with their customers, and how they use the platforms to recruit and retain volunteers.</p>
-                <br>
-                <h4 class="text-left text-capitalize">Findings</h4>
-                <p class="text-justify"><strong>Finding 1: It is TBP’s uniqueness of circumstance that allows them to stand out from other bridal shops</strong> </p>
-                <img class="img-responsive img-centered" src="img/portfolio/finding1.png"
-                  alt="Finding 1 highlights">
-                <ul>
-                  <li class="text-justify"><strong>Low Budget &amp; Hight Quality:</strong> Compared to normal bridal shops, TBP operates under low budget. However, informal in-store etiquette, and affordable designer dresses still allow TBP to offer high-quality service.</i></li>
-                  <li class="text-justify"><strong>Grassroot &amp; Market:</strong> Despite the grassroots approach to social media, and word-of-mouth advertisements, TBP still raise awareness and interest. This is the main reason why TBP’s primary market is still <i>limited to Michigan.</i></li>
-                  <li class="text-justify"><strong>Cancer:</strong> TBP’s great cause mission to fight cancer is what <i>attracts both volunteers and brides,</i> which helps both with donations and volunteer recruitment.</li>
-                </ul>
-                <br>
-                <p class="text-justify"><strong>Finding 2: The quality relationships between management and volunteers, and between volunteers and brides drive high customer satisfaction</strong> </p>
-                <img class="img-responsive img-centered" src="img/portfolio/finding2.png"
-                  alt="Finding 2 highlights">
-                <ul>
-                  <li class="text-justify"><strong>Tailored Experience:</strong> Well-trained volunteers with diverse skills allow TBP to offer tailored services to different brides.</li>
-                  <li class="text-justify"><strong>Friendly Environment: </strong>Volunteers have busy outside-lives that management takes into account and uses to maximize efficiency and service.</li>
-                  <li class="text-justify"><strong>Cooperation:</strong> Management is receptive to the opinions and needs of their volunteers and maintain a friendly relationship that <i>subverts the hierarchy of the organization.</i></li>
-                  <li class="text-justify"><strong>Anticipation/Sensitivity:</strong> Anticipating the various needs of the brides (dress size, comfortability, adjusting hours) are ways that volunteers <i>go above and beyond</i> to serve customers.</li>
-                </ul>
-                <br>
-                <p class="text-justify"><strong>Finding 3: Some day to day operations are the main sources of frustration and need improvement</strong> </p>
-                <img class="img-responsive img-centered" src="img/portfolio/finding3.png"
-                  alt="Finding 3 highlights">
-                <ul>
-                  <li class="text-justify"><strong>Problem Brides:</strong> The primary negative human interaction is with negative and picky brides, but rarely is it between volunteers.</li>
-                  <li class="text-justify"><strong>Supply &amp; Demand:</strong> The lack of an optimal staffing model is preventing TBP from adding stable open hours to meet growing demands.</li>
-                  <li class="text-justify"><strong>Technology &amp; Follow-up:</strong> Some senior volunteers struggled with the technology used in store. Also, while there is a personal follow-up, there seems to be <i>no consistent professional follow-up procedure</i> with customers.</li>
-                  <li class="text-justify"><strong>Communication &amp; Interaction:</strong> Due to the complexity of CSC, which TBP is part of, communication and interaction gaps occur <i>because of the bureaucracy.</i></li>
-                </ul>
-                <br>
-                <p class="text-justify"><strong>Finding 4: TBP emphasizes the recruitment, training, and retention of its volunteers</strong> </p>
-                <img class="img-responsive img-centered" src="img/portfolio/finding4.png"
-                  alt="Finding 4 highlights">
-                <ul>
-                  <li class="text-justify"><strong>Recruitment:</strong> Most volunteers hear about volunteering at TBP through <i>word of mouth</i>; however, some learn about it via <i>volunteer websites</i>. Still, some volunteers do not believe that online recruitment is an effective way to recruit more volunteers.</li>
-                  <li class="text-justify"><strong>Training:</strong> The key elements of training are one-on-one shadowing and mentoring, which allows for flexibility and creates a system of support for new volunteers. However, because training <i>is not always consistent,</i> some volunteers are unaware of the store’s basic operations or policies.</li>
-                  <li class="text-justify"><strong>Management &amp; Volunteer:</strong> Management is accommodating and not overbearing on their volunteers because they want to keep volunteers engaged and satisfied, which <i>helps keep a healthy base of long term volunteers.</i></li>
-                  <li class="text-justify"><strong>Communication &amp; Interaction:</strong> Besides their shifts, volunteers mainly <i>interact with each other via email and not in person.</i></li>
-                </ul>
-                
-                <br>
-                <h4 class="text-left text-capitalize">Recommendations</h4>
-                <br>
-                <img class="img-responsive img-centered" src="img/portfolio/cycle.png" alt="Operation Model Cycle">
-                <p class="text-justify"> Volunteers play a fundamental role in TBP’s product and service deliveries, which enable TBP to operate at the low-cost model. Following the expansion of store open hours and service to walk-in customers, recruiting more volunteers and maintaining
-                  a stable volunteer base has become more critical to TBP’s long-term success. </p>
-                <p class="text-justify"> To address the findings from the interviews and help TBP have sustainable growth, we therefore present four recommendations below: </p>
-                <p class="text-justify"><strong>Recommendation 1: Strengthen Social Media Presence</strong> </p>
-                <p class="text-justify">Currently, TBP runs 2 social media pages:
-                <ol>
-                  <li class="text-justify"><strong> Facebook</strong></li>
-                  <ul>
-                    <li class="text-justify"> Announce extra open hours</li>
-                    <li class="text-justify"> Promote special sales events</li>
-                    <li class="text-justify"> Share volunteer stories and experiences
-                  </ul>
-                  <li class="text-justify"><strong> Instagram</strong></li>
-                    <ul>
-                    <li class="text-justify"> Post photographs of brides who purchased their gowns from TBP
-                    </ul>
-                </ol>
-                <br>
-                <p class="text-justify">However, some more important things are missing:
-                  <ul>
-                  <li class="text-justify"> TBP’s uniqueness as a cancer-support NPO is not emphasized well</li>
-                  <li class="text-justify"> No recruitment information can be found despite the increasing demand for volunteers.</li>
-                  <li class="text-justify"> There does not appear to be a standard operational process or screening mechanism for its online social media strategies.</li>
-                </ol>
-                <br>
-                <img class="img-responsive img-centered" src="img/portfolio/workshop.png" alt="Social Media Workshop">
-                <p class="text-justify">Hence, Wonder Women <i>provided a Social Media workshop and detailed guidelines on how to manage social media pages.</i> The following topics / advice are covered: </p>
-                <img class="img-responsive img-centered" src="img/portfolio/unique example.png" alt="TBP Uniqueness">
-                <ol>
-                  <li class="text-justify"><strong>Clarify and emphasize information regarding open hours, the mission, and its nonprofit status</strong>
-                    <ul>
-                      <li class="text-justify">Posts about extra open hours would be more effective if announced earlier and promoted heavily</li>
-                      <li class="text-justify">Emphasize how TBP is different because that is why they are successful</li>
-                      <li class="text-justify">When announcing hours, do so on the appropriate platforms (an Instagram caption leaves the post jumbled and hard to read)</li>
-                    </ul>
-                  </li>
-                  <br>
-                  <li class="text-justify"><strong>Use photos that are of high definition and shows images of volunteers at work</strong></li>
-                  <ul>
-                    <li class="text-justify">Only post high definition photos and images of volunteers at work shows the professionalism of TBP as a bridal shop</li>
-                    <li class="text-justify">Keep a uniform “theme” (color scheme, types of the same “I said yes to the dress!” photo, photos of dresses done in specific ways)</li>
-                  </ul>
-                </ol>
-                <br>
-                <p class="text-justify">With clear guidelines and examples provided, TBP can develop better understanding of content management strategies and the mechanism of how social media works. </p>
-                <br>
-                <p class="text-justify"><strong>Recommendation 2: Make Shop Feel More Homey</strong> </p>
-                <img class="img-responsive img-centered" src="img/portfolio/TBP_homey.png" alt="Make shop more homey">
-                <p class="text-justify">The shop, located on the ground floor of a small shopping area, is well-lit and decorated with several dressing rooms and sitting areas. Bridal gowns occupy the same floor and are not in holding areas. <i>Currently, the front of the shop holds the TBP logo and a few framed photos along with a sign-in sheet and info placard.</i></p>
-                <p class="text-left">Instead of replicating a bridal shop feel, TBP could showcase their commitment to their brides who come to TBP for many different reasons.
-                <ol>
-                  <li class="text-justify"><strong>Pinterest Wall</strong></li>
-                  <ul>
-                    <li class="text-justify"> Photos that customers send in of their wedding days in their gowns which may inspire and motivate the volunteers.</li> 
-                    <li class="text-justify"> Photos of volunteers at events, bonding, and working fun campaigns can highlight the rewarding value of volunteering at TBP, perhaps inspiring both brides and prospective volunteers into becoming engaged with the organization.</li>
-                  </ul>
-                  <li class="text-justify"><strong>Guest Book</strong></li> 
-                  <ul>
-                    <li class="text-justify"> Instead of the sign in clipboard at the store front, reminiscent of guest books at special occasions (like weddings), would allow brides to leave comments for their volunteer consultants and allow volunteers to read their own praise.
-                  </ul>
-                </ol>
-                <br>
-                <p class="text-justify">These tactics to make the shop more "homey" would be an addition to the social media outreach that TBP undertakes and create an immediate wow-factor to the store. </p>
-                <br>
-                <p class="text-justify"><strong>Recommendation 3: Engage Volunteers with One Another</strong> </p>
-                <img class="img-responsive img-centered" src="img/portfolio/TBP_engage.png" alt="Engage volunteers">
-                <p class="text-justify">Currently, there is very little engagement between volunteers outside of their shifts. Outside of the shop, the main form of communication between volunteers is via email. Usually these email interactions regard covering each other’s shifts.</p>
-                <p class="text-justify">Here, we suggest some tactics to improve the situation <strong>on a daily basis</strong>:
-                <ol>
-                  <li class="text-justify"><strong> Encourage staff to work with someone they have not worked with before and would like to get to know. </strong></li>
-                  <li class="text-justify"><strong>Volunteer-generated recognition of their peers is a way to positively engage volunteers with one another.</strong></li>
-                  <ul>
-                    <li class="text-left">Place a box in the store so that volunteers can write a note of something that they <i>recognized another volunteer doing well.</i></li>
-                  </ul>
-                </ol>
-                <br>
-                <p class="text-justify">In addition to engaging volunteers on a day-to-day level, <strong>annual and semi-annual</strong> events should also be implemented to accomplish this goal:</p>
-                <ol>
-                  <li class="text-justify"><strong>Organize an annual all-staff celebration away from the shop or CSC.</strong></li>
-                  <ul>
-                    <li class="text-justify">Our team learned that this has been attempted once in the past, but it is worth trying again. </li>
-                    <li class="text-justify">In addition to being a celebration, it should also be a volunteer recognition event.</li>
-                    <li class="text-justify">Fun is an important aspect of volunteer satisfaction and retention, so it should be in a space that is attractive to the majority of volunteers.</li>
-                    <li class="text-justify">The event can also serves as a way for volunteers to get to know each other outside of a work environment.</li>
-                  </ul>
-                </ol>
-                <br>
-                <p class="text-justify"><i>An all-staff meeting is not recommended.</i> Our team recognized that volunteers are busy and it can be somewhat difficult to schedule a time where the most possible people are available.</p>
-                <br>
-                <p class="text-justify"><strong>Recommendation 4: Recruitment Outreach</strong> </p>
-                <p class="text-justify"> Although TBP has gradually developed its reputation as a volunteer-based bridal salon in Ann Arbor, the effectiveness of volunteer outreach has room for improvement:
-                <ol>
-                <li class="text-justify"><strong>Community Engagement</strong> </li>
-                <ul>
-                <li class="text-justify">Limited connection between TBP and the University of Michigan (UM) community and the greater Ann Arbor community. Not many people at UM are aware of this community engagement opportunity.</li>
-              </ul>
-              <br>
-                <img class="img-responsive img-centered" src="img/portfolio/sign up.png" alt="http://www.thebridesproject.org/support/volunteer/">
-                <p class="text-center"> <i>The volunteer sign-up form on TBP’s official website</i> </p>
-                <li class="text-justify"><strong>Recruitment</strong></li>
-                <ul>
-                <li class="text-justify"> We discovered in volunteer sign-up form on the official website that TBP <i>recruits not only bridal consultants,</i> but also other positions, such as outreach, social media, and events.</li>
-                <li class="text-justify"> However, without promotion on social media, people would not know about the various volunteer opportunities if they did not visit the official website. </li>
-              </ul>
-                <br>
-                <p class="text-justify"> We generated 2 <strong>personas</strong> of potentilal volunteers to understand their preferences and motivations and design target outreach programs accordingly: </p>
-                <br>
-                <img class="img-responsive img-centered" src="img/portfolio/emily.png"
-                  alt="Emily">
-                <ol>
-                <li class="text-left list-unstyled"> <strong>Emily, UM student</strong> </li>
-                  <ul>
-                  <li class="text-justify">Interested in applying what she learns in class to impact projects</li>
-                  <li class="text-justify">Her schedule is less flexible and mostly occupied by the school work</li>
-                </ul>
-                <br>
-                <img class="img-responsive img-centered" src="img/portfolio/annie.png" alt="Annie">
-                <li class="text-left list-unstyled"><strong>Annie, Resident in Ann Arbor</strong></li>
-                  <ul>
-                  <li class="text-justify">Passionate about community engagement</li>
-                  <li class="text-justify">Apart from her family duty, she may have a manageable job that allows her to participate community events</li>
-                </ul>
-                </ol>
-                <br>
-                <li class="text-justify"><strong>Generate Volunteer-Centric Content on Social Media</strong> </li>
-                <ul>
-                  <li class="text-justify">Use quotes of why people volunteer as the title or the hook of the post to attract potential candidates’ attention</li>
-                  <li class="text-justify">Include information with the type of work volunteers will do, on-board training, and time commitment along with their professional looks</li>
-                  <li class="text-justify">Whenever possible, link recruitment forms to social media posts</li>
-                  <li class="text-justify">Encourage volunteers to spread the word by sharing social media posts from TBP pages and tag people in the posts/photos to gain more exposure</li>
-                </ul>
-                <br>
-                <img class="img-responsive img-centered" src="img/portfolio/professional.png" alt="Volunteers at work">
-                <p class="text-center"> <i>This is an example of an image, with a great volunteer portrait, that could be used to show professionalism of volunteers at TBP.</i></p>
-                <br>
-                <h4 class="text-left text-capitalize">Conclusion</h4>
-                <p class="text-justify"> Through contextual inquiry, we sought to address The Bride’s Projects desire to determine optimal open hours and staffing model. In addition to many findings, our team ultimately discovered that in order to determine optimal open hours,
-                  the organization must recruit more volunteers. TBP should strengthen its social media presence, make the shop feel more homey, engage volunteers with each other, and emphasize its volunteer recruitment outreach as a way to increase volunteer
-                  satisfaction and customer demand. </p>
-                <h4 class="text-left text-capitalize">Limitations</h4>
-                <ul>
-                <li class="text-justify"><strong>Minimal interaction with customers:</strong> Part of determining optimal open hours would have required interviews with customers, as optimal open hours requires a balance of the needs of TBP and customers.</li>
-                <li class="text-justify"><strong>Interviewees:</strong> Interviewees were picked by the director, so these volunteers may not be fully representative of volunteers’ opinions and experiences.</li>
-                </ul>
-                <br>
-                <h4 class="text-left text-capitalize">Takeaway</h4>
-                <img class="img-responsive img-centered" src="img/portfolio/TBP_final.jpg" alt="Team Wonder Women">
-                <p class="text-justify"> This is my first time to work on a truly multidisciplinary team, which is both cross-cultural and cross-profession. However, contrary to the barrier I expected, my team, Wonder Women, worked very well together, from the start to the end.
-                  One of the key element that leads to the success of work is that we trust and respect each members’ profession. </p>
-                <p class="text-justify"> There are 4 members in our team – two are Library and Archive students who are native speakers in English while the other two non-native members focuses on HCI with knowledge and background in economics or business. <strong>We figure out problem
-                  as a team but work independently on what we’re proficient in before we meet to synthesize our output. </strong></p>
-                <p class="text-justify"> In addition, through the project with TBP, we really learn how to think critically and analyze problems rationally. <strong>Surprisingly, it turned out that the problem we found about TBP was not the original problem TBP asked us to solve</strong> since
-                  there was more data that they have to do to collect in order to figure out the solutions to their original problem. I’m very proud of my team for being able to think outside the box and identify the real problem and solutions that our
-                  client should look into. </p>
-                <h4 class="text-left text-capitalize">Shih-Ting (Amy) in TBP</h4>
-                <li class="text-left list-unstyled"> <strong>My Role</strong> </li>
-                  <ul>
-                  <li class="text-justify">UX Consultant</li>
-                  <li class="text-justify">Design Lead</li>
-                </ul>
-                <br>
-                <li class="text-left list-unstyled"> <strong>What I Did</strong> </li>
-                  <ul>
-                  <li class="text-justify">UX Research</li>
-                  <li class="text-justify">Secondary Research on Queueing Theory</li>
-                  <li class="text-justify">Content Strategy</li>
-                </ul>
-                <button type="button" class="btn btn-primary" data-dismiss="modal"> <i class="fa fa-times"></i>Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Portfolio Modal 3 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2>CHI 2018: AthleteJuvo</h2>
-                <h3 class="text-capitalize text-center">Interaction Design &amp; UX Research</h3>
-                <p class="item-intro text-muted text-left">"Engage", CHI Student Design Competition 2018:
-                  <br>Gamification solution for student athlete rehabilitation exercises and social support.</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/TnfHPfqx_uw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                <br>
-                <h4 class="text-left text-capitalize">Some Background Information</h4>
-                <br>
-                <p class="text-justify">In a team of 4, we competed in the CHI 2018 Student Design Competition, whose theme this year is "ENGAGE", use human-centred design approaches to develop a new way to support, <i>empower, or change the behaviour of a group around a shared area of interest.</i> Our team decided to focus on the psychological welfare of injured student athletes since after initial survey, 96.5% of injured student athletes reported affected their psychological well-being.</p>
-                <br>
-                <h4 class="text-left text-capitalize">Project Overview</h4>
-                <br>
-                <p class="text-justify">Student-athletes usually experience psychological issues during their injured period, which play important roles in their rehabilitation. The three major challenges are loss of identity, isolation, and inability to understand and communicate
-                  their recovery progress between checkups. To assist the injured athletes, we propose <strong>AthleteJuvo, a collaborative gaming solution</strong> incorporating routine rehabilitation exercises, team competition, and social supports. Specifically, AthleteJuvo
-                  utilizes the <strong>competitive nature of athletes</strong> to gamify the rehabilitation process. Athletes rebuild their identity by forming a team with other injured athletes to compete with their rival schools. AthleteJuvo also helps injured athletes
-                  meet nearby injured athletes and connect back with their non-injured team members by sending challenges. To aid in recovery, AthleteJuvo uses <strong>sensing fabric</strong> which collects and reports movement data to the athlete’s therapist.</p>
-                <br>
-                <h4 class="text-left text-capitalize">Problem Statement</h4>
-                <br>
-                <p class="text-justify">For student athletes, getting injured is not only about physical influence. While scholars pointed out that the stressors a student-athlete experiences usually stem from performance; injury, which influences their performance directly,
-                  becomes one of the major concerns for student athletes. </p>
-                <p class="text-justify"><strong>Injuries influence athletes not only psychologically but also socially.</strong> Since most of an athlete’s daily schedule is team-centered, once they get injured, they miss the social interactions they would have had otherwise. Without their regular
-                  training and practice, athletes also miss the element of competition in their lives. According to the Mind, Body, and Sport handbook, only 63% of the student-athletes indicated a willingness to ask for help if they have any mental health
-                  concerns. </p>
-                <p class="text-justify">Therefore, our goal is to help injured athletes overcome the psychological issues and strengthen the social support and information they need during their rehabilitation. The key problems we aim to solve are: (1) the <strong>isolation</strong> and the
-                  feeling of uselessness during the injured period; (2) the inconvenient methods of <strong>getting advice</strong> from athletes with similar experience; (3) the <strong>lack of support and interaction</strong> from their team members; (4) demotivation by the inability
-                  to know their <strong>rehabilitation progress.</strong> </p>
-                <br>
-                <h4 class="text-left text-capitalize">Initial User Research</h4>
-                <p class="text-justify"> To understand the problems injured athletes encountered in a broader sense, we conducted an online survey where the access was limited to injured athletes only. To get an in-depth understanding of the rehabilitation experience of injured
-                  athletes, we held eight semi-structured interviews in this initial stage, including <strong>2 expert interviews and 6 user interviews.</strong></p>
-                <p class="text-left"><strong>Phase One: Survey</strong></p>
-                <p class="text-left"> An online questionnarie was distributed to sport-related clubs and associations through email lists at the University of Michigan. A total of <strong>87 athletes with injury experience</strong> completed the online survey during a 9-day period, yielding
-                  a response rate of 47.2%. The average length of participation in sports is 12.23 years. There were 96.5% of the respondents who replied that the injury affected their psychological well-being as well. Moreover, 92% of them reported suffering
-                  from depression and isolation during their rehabilitation.</p>
-                <p class="text-left"><strong>Phase Two: Expert Interview</strong></p>
-                <img class="img-responsive img-centered" src="img/portfolio/ptoffice.png" alt="UHS PT Clinic">
-                <p class="text-justify">We also interviewed one physical therapist at the University of Michigan, and one mental coach from the Facebook group, “The Injured Athletes Club”, which is aimed at providing consultation and support for the injured athletes. The physical
-                  therapist emphasized that <strong>injured athletes usually suffer from serious anxiety and depression.</strong> The mental coach also stressed that most injured student athletes find it <strong>difficult to let people understand their situation.</strong></p>
-                <img class="img-responsive img-centered"
-                  src="img/portfolio/mira.jpg" alt="Interview">
-                <p class="text-left"><strong>Phase Three: Injured Athletes Interview</strong></p>
-                <p class="text-justify">We <strong>interviewed 6 volunteer athletes who were in the rehabilitation process or recently recovered from their injuries.</strong> All interviewees reported that during their injured period, they felt extremely useless, isolated, and
-                  experienced a loss of identity. One interviewee even thought about committing suicide during the rehabilitation period. Owing to the fact that an athlete’s daily schedule is usually team-centered and their social networks usually bond
-                  with the team, being injured means that the time spent with their team members decreases. With further investigation, we found that the feeling of being isolated stems from the inability to participate in team activities during the rehabilitation.
-                  The feeling of loss of identity derives from lacking the opportunities to work with their team members and compete against other teams.</p>
-                <p class="text-justify">Besides psychological well-being issues, they all tried to seek help from people who may have similar experiences, and to meet other injured athletes either online or offline to exchange information or get emotional support. When being
-                  asking about the inconvenience during rehabilitation, they mentioned keeping track of their rehabilitation progress was difficult, since most of the time physical therapists only provide paper-based tracking sheets, and it is difficult
-                  to stay motivated if they cannot see the recovery progress they have made.</p>
-                <br>
-                <h4 class="text-left text-capitalize">Initial User Research Results Analysis</h4>
-                <br>
-                <p class="text-justify">The results from the survey, expert interview and injured athletes interview shed light on our design directions. We concluded that the core problems injured athletes encounter could be separated into two dimensions:</p>
-                <ol>
-                 <li class="text-justify"><strong>Psychological
-                  Dimension</strong></li>
-                   <ul>
-                    <li class="text-justify">Being excluded from the team-centered activities due to inability to play causes isolation and feelings of uselessness</li>
-                  </ul>
-                  <li class="text-justify"><strong>Physical Recovery</strong></li> 
-                  <ul>
-                    <li class="text-justify">The rehabilitation
-                  progress would affect both their physical rehabilitation performance and their mental health</li>
-                    <li class="text-justify">Injured athletes would love to be aware of their performance and progress during the rehabilitation</li>
-                  </ul>
-                </ol>
-                <br>
-                <h4 class="text-left text-capitalize">Persona</h4>
-                <p class="text-justify">Based on the issues we aim to tackle with, we built personas to help us narrow the design scope. Our target users have the following qualities:</p>
-                <ul>
-                  <li class="text-justify">Athletes who are in the initial injury stage and need information from athletes who have similar experience.</li>
-                  <li class="text-justify">Athletes who are experiencing depression during a stagnant stage of rehabilitation with the need of being motivated, and the sense of achievement and competition.</li>
-                </ul>
-                <br>
-                <!-- <p class="text-justify">The following are the summarized personas:</p>
-                <p class="text-justify"><b>Tammy</b> is a junior, and the captain of the varsity rugby team at the University of Michigan. During one of the pre-season practices, she got a partial ACL (anterior cruciate ligament) and sprained LCL (lateral collateral ligament)
-                  tear. She hopes to recover as soon as possible so she attempts to connect with other athletes to get useful recovery tips.</p>
-                <p class="text-justify"><b>Jason</b> is a senior on the varsity rowing team at the University of Michigan. He got into a serious car accident a few months ago. His rehabilitation has been lengthy, tedious, and strenuous. During his months of recovery, he has
-                  not been able to participate in any game or practice with his teammates, which makes him very depressed and isolated. Due to the length of his rehabilitation, he also struggles to feel his progress. The exercises just seem to be repetitive
-                  and dull, and he gradually loses his motivation to perform the rehabilitation sessions.</p> -->
-                <h4 class="text-left text-capitalize">Technology Analysis</h4>
-                <!--img slide: devices-->
-                <p class="text-justify">In order to encourage and motivate athletes to complete their rehabilitation exercises, we decided to adopt available technologies to record and visualize their recovery progress. Our original technology solutions include:
-                <ul>
-                  <li class="text-justify"><strong>Smart bands:</strong> Athletes can wear around their head or limbs to detect heart rate and motions</li>
-                  <li class="text-justify"><strong>Kinect:</strong> While athletes are in rehab center or at home, Kinect can help them detect the correctness of their gestures more accurately</li>
-                  <li class="text-justify"><strong>Wearable sensing fabric:</strong> Combined with the use of a motion detector chip, the extension of elastic fabric allows for detection of various motion degrees and more body parts at the same time.</li>
-                </ul>
-                <br>
-                <p class="text-justify">However, after interviewing some target users, we realized that although all of the proposals above could work in terms of recording body movement data, <strong>none of them could be carried
-                  around easily or attached on different injured body parts</strong> except for the wearable sensing fabric. Therefore, we decided to incorporate wearable sensing fabric as our movement recording solution.</p>
-                <p class="text-justify">The technology of sensing fabrics has been widely discussed in chemical engineering and information technology fields due to their versatility. It has been implemented in cardiovascular disease sensors, electrocardiogram (ECG) and electromyogram
-                  (EMG) sensors, and even respiration or temperature sensors. Wearable sensing fabric is suitable for injured athletes for its high flexibility which <strong>allows it to attach on any injured parts and accurately measure strain, rotation, and
-                  flexion movements commonly found in rehabilitation exercises.</strong></p>
-                <br>
-                <h4 class="text-left text-capitalize">Idea Generation</h4>
-                <img class="img-responsive img-centered" src="img/portfolio/brainstorm.JPG" alt="Ideation">
-                <p class="text-justify">From the initial user research, personas, and technology analysis, we concluded our <strong>key design directions</strong>: </p>
-                <ul>
-                  <li class="text-justify">Bond injured athletes with their non-injured teammates more closely, and make both parties participate in the
-                  same activities to provide injured athletes a sense of contribution and competition as a team.</li>
-                  <li class="text-justify">Use wearable sensing fabric as a means of recording athletes’ rehabilitation progress.</li>
-                  <li class="text-justify">Connect injured athletes together while providing ways for them to find companionship and fun.</li>
-                </ul>
-                <br>
-                <h4 class="text-left text-capitalize">The Solution - AthleteJuvo</h4>
-                <p class="text-justify">We designed AthleteJuvo with the goals of helping injured athletes rebuild the feeling of teamwork and competition, and connect with other athletes with similar experience. AthleteJuvo is a mobile application that utilizes smart fabric
-                  technology to gamify, visualize, and socialize the rehabilitation process for injured athletes.</p>
-                <br>
-                <!-- <p class="text-justify"><strong>Key Features</strong></p> -->
-                <img class="img-responsive img-centered" src="img/portfolio/key features.png" alt="Key features">
-                <ul>
-                  <li class="text-justify">Keep a rehabilitation exercise log using a wearable sensing fabric patch</li>
-                  <li class="text-left">Gamify the rehabilitation process</li>
-                  <li class="text-justify">Build a sense of competition in athletes - Compete in rehabilitation exercise against their rival school</li>
-                  <li class="text-justify">Instill a sense of cooperation - Form a team with injured athletes from the same school</li>
-                  <li class="text-justify">Encourage athletes to do their rehabilitation exercise regularly</li>
-                  <li class="text-left">Search for and meet nearby injured athletes</li>
-                </ul>
-                <br>
-                <p class="text-justify"><!-- In the initial user interviews, athletes reported that one of the stress points they suffered during the injury period was the unawareness of their rehabilitation progress. Therefore, creating visualized data and keeping them informed
-                  is a crucial part of the rehabilitation process. --> <strong>Detection: </strong>Our team decided to utilize sensing fabric to detect and record rehabilitation data. The rehabilitation tasks are assigned by their physical therapists. Also, the sensing fabric
-                  patch detects the amount the fabric has stretched. Once the fabric is worn over moving joints or injured muscles, the repetitions can be easily counted to allow the user to keep track of their progress.</p>
-                <p class="text-justify"><strong>Competition: </strong>Without their regular training and practice, they miss the element of competition in their lives. In order to rebuild the feelings of teamwork and competition, and to encourage athletes to conduct their rehabilitation sessions thoroughly,
-                  we utilize their zeal for competing by pairing those from the same school and pitting their rehabilitation progress against a rival school. The rival schools are selected on the basis of how well their injured athletes are recovering.</p>
-                <p class="text-justify"><strong>Engagement: </strong>AthleteJuvo engages and bonds athletes together. Injured athletes will get extra points by sending challenges to non-injured team members. </p>
-                <p class="text-justify"><strong>Connection: </strong>While rehabilitation exercises are usually repetitive tasks, athletes often
-                  reported them to be <strong>strenuous in the earlier phases or boring in the later phases</strong> of their recovery. Therefore, AthleteJuvo encourages nearby athletes to meet and finish their rehabilitation sessions together. Once another injured athlete
-                  is detected being in the same area, AthleteJuvo notifies and asks the user if s/he wants to do the rehabilitation exercises with the approaching user.</p>
-                <p class="text-justify"><strong>Progress: </strong>From the interview data, we affirmed that athletes get frustrated easily if they cannot see the progress of their performance during rehabilitation. AthleteJuvo visualizes their progress on a daily basis to motivate them.</p>
-                <h4
-                  class="text-left text-capitalize">User Evaluation</h4>
-                  <p class="text-justify">We went through two iterations to test our design solutions. First we created sketches and generated a low-fidelity prototype. We then invited five participants to test the low-fidelity prototype. The participants were asked to perform
-                    the following tasks, with our team members using a Wizard of Oz technique:</p>
-                  <ul>
-                    <li class="text-justify">Attaching the sensing fabric on any of their joints or muscles, and starting the rehabilitation exercise.</li>
-                    <li class="text-justify">Checking their daily rehabilitation progress and team scores.</li>
-                    <li class="text-justify">Checking nearby injured athletes and inviting them to do rehabilitation exercises together.</li>
-                  </ul>
-                  <br>
-                  <p class="text-justify"><strong>Low-Fidelity Prototype</strong></p>
-                  <img class="img-responsive img-centered" src="img/portfolio/low-fi.png" alt="Low-fi prototype">
-                  <ul>
-                    <li class="text-justify">Users liked the idea of AthleteJuvo because they felt the gaming solution does provide them the satisfaction of competition</li>
-                    <li class="text-justify">They wish to get <strong>a greater sense of competition</strong> by having features such as taunting their rival schools</li>
-                    <li class="text-justify">Besides daily progress, they wish to see their monthly or <strong>long-term progress</strong> as well</li>
-                    <li class="text-justify">They wish to know the sports the other injured athletes play</li>
-                  </ul>
-                  <p class="text-justify">Based on the feedback, we decided to add a <strong>calendar</strong> and more statistics visualization to show the progress, and add a feature that allows athletes to <strong>taunt rival teams and cheer for those in the same school.</strong> When other injured athletes
-                    are nearby, the application shows the sports they play.</p>
-                  <p class="text-justify"><strong>High-Fidelity Prototype</strong></p>
-                  <div>
-                  <!-- <iframe src="https://invis.io/6SERY10CF" frameborder="0" align="center" height="1000" width="100%"> </iframe> -->
-                  <iframe width="438" height="930" src="https://invis.io/RKFJTUBTMU8" frameborder="0" allowfullscreen></iframe>
-
-                </div>
-                  
-                  <p class="text-justify">After refining our interface, we then invited five more participants to test the ideas. The main feedback includes:</p>
-                  <ul>
-                    <li class="text-justify">Users like the intuitive design, simple but energetic vibe of the interface, mentioning that it makes the rehabilitation exercises more fun.</li>
-                    <li class="text-justify">Some users were confused about the scoring system.</li>
-                    <li class="text-justify">Some of them did not know that they could get extra points by sending challenges to their non-injured teammates.</li>
-                  </ul>
-                  <p class="text-justify">The users’ feedback confirmed that it would be better to have a clear guide or tutorials for the features and scoring system. Our users were fond of the idea of making the rehabilitation competitive. One of the participants commented:
-                    <strong>“I think it (AthleteJuvo) is cool because a lot of athletes struggle emotionally. When you get injuries, you are out of sport, and sport is your identity. So I think it is gaining it back and making it competitive through rehab, I
-                    like this a lot.”</strong></p>
-                  <h4 class="text-left text-capitalize">Conclusion</h4>
-                  <p class="text-justify">AthleteJuvo is a gaming solution aimed at helping injured athletes get support from people with similar cases, solving the sense of estrangement from the team, and encouraging and motivating injured athletes to do their rehabilitation
-                    exercises regularly while providing them a sense of participating in team sports again. Our evaluation demonstrated that athletes considered the ideas and features to be very practical and fun. We believe, through AthleteJuvo, athletes could be better understood and be engaged in both the injured athlete community and non-injured athlete community.</p>
-                  <button type="button"
-                    class="btn btn-primary" data-dismiss="modal"> <i class="fa fa-times"></i>Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Portfolio Modal 4 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2>Play with Images</h2>
-                <p class="item-intro text-muted">To sharpen my design skills, I often volunteer to do design for student activities.</p>
-                <h3 class="text-left text-capitalize">Visual Identity Design</h3>
-                <img class="img-responsive img-centered" src="img/portfolio/design-guide.png" alt="Visual Identity Design">
-                <p class="text-justify">This is <strong>the design guide for my personal visual identity.</strong> The flamingo is a combination of my <strong>first name initials</strong>, which is S and T, in addition to my last name, Lin. The primary color I adopted for my design is pink of high saturation, which represents that I'm an <strong>energetic and passionate</strong> person.</p>
-                <br>
-                <h3 class="text-left text-capitalize">Graphic Design</h3>
-                <img class="img-responsive img-centered" src="img/portfolio/web_banners_1.png" alt="Web Banners">
-                <img class="img-responsive img-centered" src="img/portfolio/web_banners_2.png" alt="Web Banners">
-                <p class="text-justify">The web banners are designed for the <strong>8 classes</strong> that are offered at the University of Michigan during Winter, 2018. The color harmony I adopted was <strong>double complimentary</strong>. With this color scheme, I was able to take care of the themes on both <strong>waters and the lands.</strong></p>
-                <img class="img-responsive img-centered" src="img/portfolio/cherries.jpg" alt="Fruit Collage">
-                <p class="text-justify">I like to <strong>experiment with different media</strong>. This is an illustration of cherry, whose symbolic meaning is rebirth. The pink background resembles the feeling of spring and hence adds to the atmosphere of rebirth.</p>
-                <img class="img-responsive img-centered" src="img/portfolio/grad_invitation_1.png" alt="Grad Invitation Front">
-                <img class="img-responsive img-centered" src="img/portfolio/grad_invitation_2.png" alt="Grad Invitation Back">
-                <p class="text-justify">I was the <strong>Design Lead</strong> of department commencement during undergrad. The purple color used in the background symbolizes the color of the Social Science College, which my department belongs to. Four years of training in economics is intense, so <strong>"SURVIVE" again emphasizes the effort and the high sense of accomplishment of graduating from the department of economics.</strong></p>
-                <!-- <p class="item-intro text-muted">Combine the features of 5 different cites from 5 different continents with a brand.</p>
-                <img class="img-responsive img-centered" src="img\portfolio\vic majuro.jpg" alt="">
-                <p>I was in charge of the city Majuro, Republic of Marshall Islands. The dominant color is tiffany green while the recessive colors are navy, white and green.</p>
-                <img src="img\portfolio\majuro analysis.jpg" class="img-responsive">
-                <p>A triangle bralette without thick padding is the best choice for a vaction to a tropical island. Strappy and adjustable back along with sporty elastic band adds enough support to the boobs. With the cute pandunus pattern on it, the bralette
-                  can be worn as a single item and is easy to go with any plain shirt.</p>
-                <img src="img\portfolio\color ana.jpg" class="img-responsive">
-                <p>Five different cities are located in different parts of the PCCS color system. Since the city image of Majuro is relaxing, marine and tropical, it belongs to the bright tone grouping.
-                  <img src="img\portfolio\map.jpg" class="img-responsive"> </p>
-                <p>Colors used are dotted on the world map.</p>
-                <img class="img-responsive" src="img\portfolio\top.jpg">
-                <p></p>
-                <p>↑ Top(Edited/Original): The pandunus pattern is used since it's one of the most common plants on the Marshall islands, which adds a tropical feeling to the bralette.</p>
-                <p>
-                  <img src="img\portfolio\under.jpg" class="img-responsive">↑ Bottom(Edited/Original)</p> -->
-                <button type="button" class="btn btn-primary" data-dismiss="modal"> <i class="fa fa-times"></i>Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Portfolio Modal 5 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2>300 Days of Microsoft</h2>
-                <p class="item-intro text-muted">Microsoft Internship Sharing.</p>
-                <img class="img-responsive img-centered" src="img\portfolio\video cover.jpg" alt="">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/t2yVKp64Avc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                <br>
-                <p class="text-justify">
-                  Because of my fluency in English and prominent performance at work, I was chosen as three of the representatives to share what I had learned during my one-year internship at Microsoft with MBA Students from the  University of Pittsburgh.</p>
-                <img class="img-responsive img-centered"
-                  src="img\portfolio\ntu sharing.jpg" alt="">
-                <p>
-                  <a href="https://www.youtube.com/watch?v=wRSFFWlR_4k">Here</a> is the Chinese version of the internship sharing video, filmed during the information session of 2016 Microsoft Intern Recruitment at National Taiwan University. More stories are shared in this video. Enjoy :)</p>
-                <button type="button"
-                  class="btn btn-primary" data-dismiss="modal"> <i class="fa fa-times"></i>Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Portfolio Modal 6 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2>Good Morning</h2>
-                <p class="item-intro text-muted">Award-winning collage &amp; poetry.</p>
-                <img class="img-responsive img-centered" src="img\portfolio\words.jpg" alt="">
-                <p>Inspiration: The designated theme was, "Living arts in our lives." I chose the action of frying an egg for a loved one in the morning and describe the actions as a plot in kongfu movies.</p>
-                <img class="img-responsive img-centered" src="img\portfolio\universe of words.jpg"
-                  alt="">
-                <p>Collage made with Photoshop.</p>
-                <!-- Project Details Go Here -->
-                <h2>In &amp; Out: the Ballroom</h2>
-                <p class="item-intro text-muted">Check out my life in ballroom dance club.</p>
-                <img class="img-responsive img-centered" src="img\portfolio\ntubdc compete.jpg" alt="">
-                <p>Ballroom Dance Club of National Taiwan University (NTUBDC) competed in the College Cup and won 2nd place out of 20+ colleges around Taiwan. I also won the 6th place in chacha and jive.</p>
-                <img class="img-responsive img-centered" src="img\portfolio\Christmas 2拷貝.jpg"
-                  alt="">
-                <p>I was the Multimedia Officer of NTUBDC from 2015/7~2016/6.</p>
-                <p>Feel free to follow us on
-                  <a href="https://zh-tw.facebook.com/NTU.Dancing/">our Facebook Page</a>.</p>
-                <!--Project Details Go Here-->
-                <h2>All About the Stage</h2>
-                <p class="item-intro text-muted">Singing, dancing, acting, cheerleading and more!</p>
-                <img class="img-responsive img-centered" src="img\portfolio\11052888_10206462860353771_4880900748454857307_o.jpg" alt="">
-                <p>2016:
-                  <a href="http://blog.xuite.net/goest.tsai/ballroomdance/418280108">Worth it</a>
-                </p>
-                <p>2015:
-                  <a href="https://www.youtube.com/watch?v=WrhRh6CH0rc">Lo So Che Finira</a>/
-                  <a href="http://blog.xuite.net/goest.tsai/ballroomdance/352173166">September</a>/
-                  <a href="https://www.youtube.com/watch?v=eJThtwCFXLI">Pop Dance</a>
-                  <a href="https://www.youtube.com/watch?v=97pDpSPBSfI">Musical</a>
-                </p>
-                <p>2014:
-                  <a href="https://www.youtube.com/watch?v=qmGSNwcWxF0">Cheerleading</a>
-                </p>
-                <!--Project Detail Go Here-->
-                <h2>Abdomen Inflation</h2>
-                <p class="item-intro text-muted">New-comer in marketing.</p>
-                <img class="img-responsive img-centered" src="img\portfolio\5-8如果主人都腹舒 那我們就能接吻了.jpg" alt="">
-                <p>11 days countdown: Encourage people to come to Econ Week and buy lunch and snacks. This way, their abdomens can be large enough to get in touch / kiss the other.</p>
-                <img src="img\portfolio\6.jpg" class="img-responsive img-centered" alt="">
-                <p>6 days countdown: Whose stomach is rumbling? The 2 girls hears the boys' stomach rumbling. The number 6 looks like an ear.</p>
-                <img src="img\portfolio\5.jpg" class="img-responsive img-centered" alt="">
-                <p>5 days countdown: Spicy hot girls with spicy hot burrito.</p>
-                <img src="img\portfolio\1.jpg" class="img-responsive img-centered" alt="">
-                <p>1 day countdown: Unveil the cover girls who only shows their back and abdomen on the banner and the logo respectively.</p>
-                <a href="https://www.facebook.com/econweekrecovery519523/?fref=ts">Facebook Page</a>
-                <p></p>
-                <button type="button" class="btn btn-primary" data-dismiss="modal"> <i class="fa fa-times"></i>Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- jQuery -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <!-- Bootstrap Core JavaScript -->
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-  <!-- Plugin JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-  <!-- Contact Form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
-  <!-- Theme JavaScript -->
-  <script src="js/agency.min.js"></script>
+    </footer>
 </body>
 
 </html>
