@@ -17,6 +17,11 @@ header{
     color: white;
 }*/
 
+.topimage {
+	display: block;
+	background-color: red;
+}
+
 .centered {
     position: absolute;
     top: 54%;
@@ -239,6 +244,7 @@ nav{
 .intro{
 	padding-top: 12em;
 }
+
 
 /*WORK*/
 /*section .work{
