@@ -11,6 +11,16 @@
 	font-size: 1.06em;
 	}
 
+	.centered h1{
+		color:#fff; 
+		font-size: 1.5em;
+    }
+
+    .centered h2{
+    	color:#fff; 
+    	font-size: 1em;
+	}
+
 
 /*	.top-nav ul li a.pre, .top-nav ul li a.nxt{
 		visibility: hidden;
@@ -135,6 +145,16 @@
 	.content li{
 	line-height: 1.8em;
 	font-size: 1.1em;
+	}
+
+	.centered h1{
+		color:#fff; 
+		font-size: 1.8em;
+    }
+
+    .centered h2{
+    	color:#fff; 
+    	font-size: 1.3em;
 	}
 
 /*	.top-nav ul li a.pre, .top-nav ul li a.nxt{

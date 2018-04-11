@@ -19,14 +19,26 @@ header{
 
 .topimage {
 	display: block;
-	
+	position: relative;
+	z-index: -20;
 }
 
 .centered {
     position: absolute;
-    top: 54%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.centered h1{
+	color:#fff; 
+	font-size: 1.2em;
+}
+
+.centered h2{
+    color:#fff; 
+    font-size: 0.7em;
 }
 
 
