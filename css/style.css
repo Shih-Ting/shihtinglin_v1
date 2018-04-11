@@ -32,12 +32,10 @@ header{
 }
 
 .centered h1{
-	color:#fff; 
 	font-size: 1.2em;
 }
 
-.centered h2{
-    color:#fff; 
+.centered h2{ 
     font-size: 0.7em;
 }
 
