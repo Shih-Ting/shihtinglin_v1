@@ -1,155 +1,816 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <title>Shih-Ting (Amy) Lin, Interaction | UX Designer</title>
-    <!-- JS jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- clickable image with z-index -->
-    <script>
-    $('.photo-cell img').on('click', function() {
-        var newURL = $('a', this).prop('href');
-        window.location = newURL;
-    });
-    // $('.page-scroll li').on('click', function() {
-    //     var navURL = $('a', this).prop('href');
-    //     window.location = navURL ;
-    // });
-    </script>
-    <!-- Define keywords for search engines -->
-    <meta name="keywords" content="Interaction Designer,Shih-Ting (Amy) Lin, Shih-Ting Lin, UX, Amy Lin">
-    <meta name="description" content="Hi, there! My name is Shih-Ting but I go by Amy. I'm a rational but passionate Interaction Designer!">
-    <meta name="author" content="Shih-Ting (Amy) Lin">
-    <!-- Set the viewport to make website look good on all devices -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Favicon -->
-    <link rel="icon" href="img/portfolio/favicon.png">
-    <!-- Custom Fonts -->
-    <!-- FontAwesome -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
-    <!-- Barlow -->
-    <link href="https://fonts.googleapis.com/css?family=Barlow:400,700,300,100,400italic,700italic" rel="stylesheet" type="text/css">
-    <!-- Montserrat -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <!-- Droid Serif -->
-    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <!-- Roboto -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
-    <!-- My CSS stylesheet-->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet" type="text/css">
-</head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An economist chasing an HCI dream:)">
+  <meta name="author" content="">
+  <title>Shih-Ting Lin, Interaction | UX Designer</title>
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom Fonts -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+  <!-- Theme CSS -->
+  <link href="css/agency.min.css" rel="stylesheet">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media
+    queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file://
+    -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <link rel="icon" href="img/portfolio/favicon.png"> </head>
 
-<body>
-    <header id="top">
-        <nav class="top-nav" id="top-nav">
-            <div class="logo">
-                <a href="index.html"><img src="img/logo/logo.png" alt="Shih-Ting's logo"></a>
-            </div>
-            <div id="menu">
-                <ul>
-                    <li><a class="page-scroll current-page" href="#portfolio">WORK</a></li>
-                    <li><a class="page-scroll" href="about.html">ABOUT</a></li>
-                    <li><a class="page-scroll" href="AthleteJuvo.html">AWARD</a></li>
-                    <!-- new -->
-                    <li><a class="page-scroll" href="graphic.html">FUN</a></li>
-                    <!-- <li><a class="page-scroll" href="#belief">BELIEF</a></li> -->
-                    <!-- <li><a class="page-scroll" href="https://drive.google.com/file/d/13_UM4s0KL3TSjHBUeWdHWihlupRX1BIK/view?usp=sharing">RESUME</a></li> -->
-                    <!-- <li><a href="index.html#portfolio" id="nav-p">Portfolio</a></li> -->
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <div id="main-content" class="main-content main-content-pieces">
-        <div id="intro" class="intro">
-            <div class="container">
-            <img src="img/header-bg.JPG" alt="Hello! It's Shih-Ting!">
-            <div class="centered">
-                <h1 style="color:#fff;">Shih-Ting (Amy) Lin</h1>
-                <h2 style="color:#fff; font-size: 1em;">Design | Choice Architecture | Passion</h2>
-            </div>
-            <div>
-        </div>
-        <section class="work" id="portfolio">
-            <h1>WORK</h1>
-            <h2>When the mind goes wild.</h2>
-            <div class="photo-list">
-                <div class="photo-grid">
-                    <a href="FDC.html">
-                        <div id="item1" class="photo-cell">
-                            <!-- <div id="main-content" class="main-content"> -->
-                            <img src="img/portfolio/LDR.png" class="img-responsive" alt="FDC for LDR Couples">
-                            <!-- <div class="overlay">
-                                    <div class="text">FDC: Interaction Design<div>
-                                </div> -->
-                        </div>
-                    </a>
-                    <!-- <div id="caption1" class="photo-cell">
-                            <h3>FDC for LDR Couples</h3>
-                            <h4>Interaction Design</h4>
-                        </div> -->
-                </div>
-                <div class="photo-grid">
-                    <a href="TBP.html">
-                        <div id="item2" class="photo-cell">
-                            <!-- <div id="main-content" class="main-content"> -->
-                            <img src="img/portfolio/TBP.png" class="img-responsive" alt="The Brides Project">
-                        </div>
-                        <!-- <div id="caption2" class="photo-cell">
-                                <h3>The Brides Project</h3>
-                                <h4>UX Research / Service Design</h4>
-                            </div> -->
-                    </a>
-                </div>
-                <div class="photo-grid">
-                    <a href="AthleteJuvo.html">
-                        <div id="item3" class="photo-cell">
-                            <img src="img/portfolio/AthleteJuvo.png" alt="AthleteJuvo">
-                        </div>
-                    </a>
-                </div>
-                <div class="photo-grid">
-                    <a href="graphic.html">
-                        <div id="item4" class="photo-cell">
-                            <img src="img/portfolio/play.png" class="img-responsive" alt="Graphic Design">
-                        </div>
-                    </a>
-                </div>
-                <div class="photo-grid">
-                    <a href="Microsoft.html">
-                        <div id="item5" class="photo-cell">
-                            <img src="img/portfolio/microsoft.jpg" class="img-responsive" alt="Microsoft internship">
-                        </div>
-                    </a>
-                </div>
-                <div class="photo-grid">
-                    <a href="activities.html">
-                        <div id="item6" class="photo-cell">
-                            <img src="img/portfolio/universe_of_words.jpg" class="img-responsive" alt="Life outside classroom">
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
+<body id="page-top" class="index">
+  <!-- Navigation -->
+  <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span>Menu <i class="fa fa-bars"></i> </button>
+        <a class="navbar-brand page-scroll" href="#page-top">Shih-Ting Lin</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="hidden">
+            <a href="#page-top"></a>
+          </li>
+          <li>
+            <a href="#services" class="page-scroll">Belief</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#about">Experience</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#team">Profile</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
     </div>
-    <!-- <hr>
-        <section class="belief" id="belief">
-                <h1>BELIEF</h1>
-                <h2>I believe, so I am.</h2>
-                <svg height="200" width="200">
-                    <circle cx="50" cy="50" r="50" fill="#EF8AA5" />
-                </svg>
-        </section>
-    </div> -->
-    <footer style="text-align:center; height:80px; border-top: 5px dashed #ccc; line-height:80px;">
-        <!-- border-top: 1px solid #eee; -->
-        <div class="container">
-            <div class="row">
-                <span class="copyright">© 2018 Created by Shih-Ting (Amy) Lin</span>
-            </div>
+    <!-- /.container-fluid -->
+  </nav>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in">Welcome to Shih-Ting's Place!</div>
+        <div class="intro-heading">Let's See What She's Got!</div>
+        <a href="#services" class="page-scroll btn btn-xl">I Want More</a>
+      </div>
+    </div>
+  </header>
+  <!-- Services Section -->
+  <section id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Belief</h2>
+          <h3 class="section-subheading text-muted">I believe, so I am.</h3>
         </div>
-    </footer>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4"> <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-stack-1x fa-inverse fa-bolt"></i>
+            </span>
+          <h4 class="service-heading">Proactivity</h4>
+          <p class="text-muted">We can always do something more to make a difference and be the change we want to be.</p>
+        </div>
+        <div class="col-md-4"> <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-stack-1x fa-inverse s fa-angellist"></i>
+            </span>
+          <h4 class="service-heading">Diveristy</h4>
+          <p class="text-muted">I cherish the mix of voices I can hear because that's what makes us unique as an idividual.</p>
+        </div>
+        <div class="col-md-4"> <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-stack-1x fa-inverse fa-diamond"></i>
+            </span>
+          <h4 class="service-heading">Perseverance</h4>
+          <p class="text-muted">I won't give up. I won't give in 'til I reach the end. Then, I'll start again.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Portfolio Grid Section -->
+  <section id="portfolio" class="bg-light-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Portfolio</h2>
+          <h3 class="section-subheading text-muted">When the mind goes wild.</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content"> <i class="fa fa-3x -circle fa-heart-o"></i> </div>
+            </div>
+            <img src="img\portfolio\color scheme.jpg" class="img-responsive" alt=""> </a>
+          <div class="portfolio-caption">
+            <h4>VS X City Image</h4>
+            <p class="text-muted">Color Scheme: Photoshop</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content"> <i class="fa fa-3x fa-laptop"></i> </div>
+            </div>
+            <img src="img\portfolio\microsoft.jpg" class="img-responsive" alt=""> </a>
+          <div class="portfolio-caption">
+            <h4>300 Days of Microsoft</h4>
+            <p class="text-muted">Microsoft Internship Sharing</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content"> <i class="fa fa-3x -circle fa-eye"></i> </div>
+            </div>
+            <img src="img\portfolio\christmas party ntubdc.jpg" class="img-responsive" alt=""> </a>
+          <div class="portfolio-caption">
+            <h4>In &amp; Out: the Ballroom</h4>
+            <p class="text-muted">Ballroom Dance Routine</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content"> <i class="fa fa-3x fa-play-circle"></i> </div>
+            </div>
+            <img src="img\portfolio\ballroom perform.jpg" class="img-responsive" alt=""> </a>
+          <div class="portfolio-caption">
+            <h4>All About The Stage</h4>
+            <p class="text-muted">Performance Videos</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content"> <i class="fa fa-3x fa-hand-o-up"></i> </div>
+            </div>
+            <img src="img\portfolio\econ week.jpg" class="img-responsive" alt=""> </a>
+          <div class="portfolio-caption">
+            <h4>Abdomen Inflation</h4>
+            <p class="text-muted">Facebook Page Marketing</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content"> <i class="fa fa-3x -circle fa-trophy"></i> </div>
+            </div>
+            <img src="img\portfolio\universe of words.jpg" class="img-responsive" alt=""> </a>
+          <div class="portfolio-caption">
+            <h4>Good Morning</h4>
+            <p class="text-muted">Here We Art: NTU Art Festival</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Experience</h2>
+          <h3 class="section-subheading text-muted">Connecting the dots.</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="timeline">
+            <li>
+              <div class="timeline-image">
+                <img class="img-circle img-responsive" src="img\about\econweeK.jpg" alt=""> </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>May, 2014</h4>
+                  <h4 class="subheading">Marketing Chair, NTU Econ Week</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">● Ran Facebook page with a team of 8, drawing awareness of 1,000 people on average every day</p>
+                  <p class="text-muted">● Designed the banner and profile picture of the event, getting 3 times the number of likes and comments compared to logos alike when used as profile pictures</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="img-circle img-responsive" src="img\about\ntuecon.jpg" alt=""> </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>August 2014 - June 2015</h4>
+                  <h4 class="subheading">PR Chair, NTU Econ S.A.</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">● Organized the first cross-college prom for 300+ freshmen from 6 departments</p>
+                  <p class="text-muted">● Convinced 3 corporations into sponsor Econ Night, saving USD 1000+, historically high on the department</p>
+                  <p class="text-muted">● Boosted Facebook post likes by 1000+ within 2 weeks for student event sponsors</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-image">
+                <img class="img-circle img-responsive" src="img\about\ta.jpg" alt=""> </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>September 2014 - January 2015</h4>
+                  <h4 class="subheading">Teaching Assistant, NTU</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">● Doubled student interaction during class discussion</p>
+                  <p class="text-muted">● Conducted a camp with 20+ students for 15+ elementary school students from vulnerable families</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="img-circle img-responsive" src="img\about\microsoft1.jpg" alt=""> </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>July 2015 - June 2016</h4>
+                  <h4 class="subheading">Marketing Administrative Assistant-Intern, Microsoft</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">● Increased the attendance rate of partner seminars &amp; technical workshops by 50% within 6 months</p>
+                  <p class="text-muted">● Directed a film for Microsoft Internship Facebook page, gaining 6000+ views within 3 days</p>
+                  <p class="text-muted">● Handled 30+ seminars/workshops registration and materials for 1000+ technical and sales partners</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <h4>DROP
+                  <br>A DOT
+                  <br>HERE!</h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Team Section -->
+  <section id="team" class="bg-light-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center col-lg-12">
+          <h2 class="section-heading">Profile</h2>
+          <h3 class="section-subheading text-muted">Dreamer, Perfectionist, Performer, and Designer.</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img src="img\team\profile.jpg" class="img-circle img-responsive" alt="">
+            <h4>Shih-Ting Lin</h4>
+            <p class="text-muted">amylin5225@gmail.com
+              <br> </p>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="portfolio-caption">
+            <h5 class="text-left">ABOUT ME</h5>
+            <p class="text-left text-muted">With a background in economics and Chinese-English translation and interpretation, I have develop the flexibility to switch my mind between sense and sensibility. I admire what information has to offer yet never forget the experiences of the
+              audience. Communicative but independent, I work well both as a group and as an individual.</p>
+            <h5 class="text-left">PROS &amp; LOVES</h5>
+            <ul class="list-unstyled">
+              <li>Fields I'm well-trained:</li>
+              <p class="text-left text-muted">Color Scheme / Game Theory / Marketing (B2B) / Chinese-English Translation / Consecutive Interpretation / Sight Translation / Ballroom Dance (Latin)</p>
+              <ulclass="list-unstyled">
+                <li>Currently learning:</li>
+                <p class="text-left text-muted">Viusal Identity Design / Programming (Java, html) / Simultaneous Interpretation</p>
+                <li>Things I enjoy doing:</li>
+                <p class="text-left text-muted">Doodling / Brainstorming / Photography / Story-Telling / Dancing / Writing</p>
+              </ulclass="list-unstyled">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4"> <span class="copyright">© 2016 Created by Shih-Ting (Amy) Lin</span> </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Portfolio Modals -->
+  <!-- Use the modals below to showcase details about your portfolio projects!
+    -->
+  <!-- Portfolio Modal 1 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-center">FDC for LDR Couples</h2>
+                <h3 class="text-capitalize text-center">Interaction Design</h3>
+                <p class="item-intro text-muted text-left">Are you in an LDR? Feel your partner even when you’re apart!
+                  <br> Couples in LDR are no different from normal couples – we also crave for a sense of intimacy,
+                  <br>which often times comes from the sense of touch. </p>
+                <img class="img-responsive img-centered" src="img/portfolio/FDC_LDR.png" alt="">
+                <h4 class="text-left text-capitalize">Some Background Information</h4>
+                <br>
+                <p class="text-justify">FDC for LDR Couples is a 12-week individual project that I worked on because of the difficulties I faced when I first started a long-distance relationship (LDR) when I moved to the United States to pursue a Master’s degree. The main direction
+                  of the problem is predetermined by myself through personal experience but I spent some time scoping my problem afterwards.</p>
+                <p class="text-justify">My role in this project was basically everything, from user researcher, to project manager, to interaction designer. I went through the whole design process on my own with thesis and methodology instructions from Professor Tonya McCarley.</p>
+                <br>
+                <h4 class="text-left text-capitalize">Problem Statement</h4>
+                <br>
+                <p class="text-justify"> As people are growing up, we might be faced with the dilemma between pursuing a career/degree and maintaining a romantic relationship with our special someone. To strike a balance between the two, more and more people start a long-distance relationship (LDR). The up side of it is that we have more time and personal space to enjoy our lives and spend time with friends and family while the down side is that we have to endure the days of loneliness, not being able to hug each other or just to hold hands on a bad day. As technology advances, we can now text or video-chat with our partner to share every little thing that happen around us at approximately the same time. Still, the means of interaction might be limited to words and stickers. Physical interactions and hence the playfulness might be sacrificed. </p>
+                <br>
+                <h4 class="text-left text-capitalize">Solution Overview</h4>
+                <br>
+                <p class="text-justify"> Face Dance Challenge (FDC) is originally a mobile-based application/game that allows users to score by changing their facial expression according to the emojis that show up on screen. However, in this version of FDC, it isn’t a mobile application itself. Instead, it’s designed to be an extension in the Facebook Messenger, aiming to spice up interaction between couples in LDRs. The design of FDC is based on the video-chat and gaming feature that Messenger already supports. However, it also allows physical interaction and the sense of touch to be transmitted via the vibration or haptic feedback of iPhones. Namely, FDC is a game that features a combination of image, sound and physical interaction. This combination makes up for the problem that couples in LDRs create less shared memories due to geographic barriers. By playing games while video chatting, couples can see each other’s facial expression and listen to their screams and laughter as if they were on each other’s sides. </p>
+                <div>
+                  <iframe src="https://invis.io/6SERY10CF" frameborder="0" align="center" height="1000" width="100%"> </iframe>
+                </div>
+                <br>
+                <h4 class="text-left text-capitalize">Design Process</h4>
+                <br>
+                <!-- Problem Exploration -->
+                <p class="text-justify"> At the problem exploration stage, I went through several boards of a popular BBS forum in Taiwan, called PTT, which has conserved online discussion data for more than 20 years. The boards I referred to includes Boy-Girl, Sex and Long-Distant. I read through all the discussions that contains key words like long distance relationship and problems to identify the problems as if I were conducting a user research. Eventually, I found that not only sentimental communication but also physical interactions play a significant role in relationships. </p>
+                <p class="text-justify"> Before I jump into the solution, I also did a competitive analysis on the current technological solutions available on the market. What surprised me was that despite the large number of LDR couples, all the software solutions I found on the market target couples who can meet relatively frequently. Hence, the features of these solutions are based on storing created memories. Sadly, for LDR couples, if they cannot meet their partners in person, memories can be hard to create. In that sense, these couples depend on contemplating on their good old days to maintain their attraction with their partners. </p>
+                <p class="text-justify"> With these findings in mind, the final scope of my project was set – (1) spicing up the interactions between couples, physical interactions included and (2) create something that is shared between these partners. </p>
+                <!-- Solution Ideation -->
+                <p class="text-justify"> After my project scope was defined, over the following design process, my solution focus has always been on the improvement of physical interaction between LDR couples. Interestingly, during brainstorming, almost all the ideas I came up with require the users to buy extra products or services such as gloves, meals or a sensor. Nonetheless, I have always kept the welfare of my target users in my mind and wanted to benefit as many couples in LDR as I do as possible, which is the reason why I choose Messenger as the foundation of my game. </p>
+                <p class="text-justify"> To further identify my target users, I built 4 personas, including 3 pro-persona and 1 anti-persona. All of these personas are based on the stories I read on the PTT forum, which are all true stories. To check the validity of my final solution, I went through story-mapping to model user activities and their current potential ways of interacting with their couples. Finally, I iterate three rounds of QOCs (Question, Options and Criteria) to explore the potential key features I want to include in my final design as well as how these features will be presented. </p>
+                <!-- User Test & Iteration -->
+                <p class="text-justify">With clearer picture of how my final design would be like, I started to work on my low-fi prototypes that models 10 tasks and 15 interactions I would like to test. The biggest design change occurred during my first user test on paper prototypes when my user told me that she had no idea that couples playing FDC are in charge of one side of the facial expression despite the instruction provided before the game starts. In my original design, the emoji would fly into the screen the horizontally and then vertically from the bottom side of the screen. Since my user was confused about how to react when she saw an emoji flying on the other side of the screen, I decided that emoji would always fly in the middle from the bottom, which sacrifice the level of difficulty but improves the interaction. </p>
+                <br>
+                <p class="text-justify">From the brainstorming to prototyping, I’m always thinking about my design. Whenever I have a new idea in my mind, I always talk to my boyfriend about it and discuss the pros and cons of it. Especially when I’m working on high-fi prototypes, I come up with new designs every day and usually spend more than a half of prototyping time to refine the design I made earlier. Generating new ideas every day was hard; however, as the reading suggested, I do have made a lot of breakthrough in terms of the visual representation as well as the interactions between screens and users. For instance, at first, the only way for my users to switch between screens was by tapping on the space on the screen but as I discovered more about InVision, I eventually set timer to switch between screens to make the motion of flying emoji much similar to how it would work in reality. </p> &lt;
+                <h4 class="text-left text-capitalize">One Step Further</h4>
+                <br>
+                <p class="text-justify"> My design philosophy has always been “People respond to incentives.” Aside from maintaining consistency across the whole project, I always think one step further as of how to make my design appealing and attractive in the long run. Thus, an explicit feature that has to do with incentive-creating is the mechanism that couples can unlock more interactions as they score more points. Additionally, I add another line of word hinting the users on how far they are from the new interaction. Other than that, I want to avoid LDR couples who play FDC to fight because of the game. Thus, the mechanism of the game itself awards good teamwork but if only one of the couple performs well, they can still gain points. Through this scoring mechanism, I would like to convey the message that though it’s perfect that we, as a couple, can work well together, if it turns out to be just the opposite, it’s still okay because one’s strength can help make up for the other’s weakness. </p>
+                <br>
+                <h4 class="text-left text-capitalize">Impact</h4>
+                <br>
+                <p class="text-justify"> The societal impact I would like to make on couples in LDR is that there’s no need to be afraid of the distance between them and their special ones and it’s okay to run out of things to share during video-chat. LDR couples are no different from ordinary couples. Though reminiscing the good old days helps them go through the dark lonely nights, couples can still create new memories in spite of being physically apart. </p>
+                <p class="text-justify"> Through my design, I want to inspire more potential or future design for LDR couples as during my competitive analysis, I found that there’s less existing digital solutions designed just for LDR couples. </p>
+                <br>
+                <h4 class="text-left text-capitalize">Takeaway</h4>
+                <br>
+                <p class="text-justify"> The hardest part of going through the design process is not design itself. Instead, for me, it’s conquering the fear of falling behind. I’m really fortunate to have Tonya as my instructor to boost me up when I felt that I could not see my strength in the field of information with an economics background. However, as it turned out, my past-4-year training in economics does help me think more thoroughly and go one step forward to consider the long-run effect of my product.
+                  </p>
+                <br>
+                <p class="text-center"> </p>
+                <button type="button" class="btn btn-primary" data-dismiss="modal"> <i class="fa fa-times"></i>Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Portfolio Modal 2 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <h2 class="text-center">The Brides Project</h2>
+                <h3 class="text-capitalize text-center">Consulting, Service Design &amp; Content Strategy</h3>
+                <p class="item-intro text-muted text-left">We seek to figure out the optimal open hours for The Brides Project, a volunteer-based non-profit bridal shop, using contextual inquiry as well as user research methodology.</p>
+                <img class="img-responsive img-centered" src="img\portfolio\video cover.jpg"
+                  alt="">
+                <h4 class="text-left text-capitalize">Client Overview</h4>
+                <br>
+                <p class="text-justify">The Brides Project (TBP) is a non-profit organization founded in September of 2011, run by volunteers and a small group of paid, part-time staff. This program was born from the inspiration of a similar Canadian initiative founded by Helen Sweet in 2004 who created a bridal gown donation project whose proceeds went to support various cancer charities. The idea was then brought to the United States and further implemented in Ann Arbor, Michigan. Operating as a bridal shop, TBP sells previously-worn and donated wedding dresses at discounted retail prices. All of these profits are then used to support local cancer education, counseling, and support programs at the Cancer Support Community (CSC) of Greater Ann Arbor. TBP is one of the volunteer programs operating under the CSC. TBP’s creative solutions are aimed to provide sustained funding for the CSC and to support bridal customers who are looking for economical wedding gowns.</p>
+                <br>
+                <h4 class="text-left text-capitalize">Problem Statement</h4>
+                <br>
+                <p class="text-justify">For the past few years, The Brides Project has experienced surging customer demand. To fulfill customer demand, since November 2016, The Brides Project has extended open hours and started to accept walk-in customers while maintaining the by-appointment service. Recently, management has been concerned that the existing volunteer base may not be sufficient to support all the changes in open hours and service expansion. Management wants us to identify the optimal staffing model and open hours that will alleviate volunteer burn-out, maintain customer satisfaction, and ultimately drive sales growth of the store.</p>
+                <br>
+                <h4 class="text-left text-capitalize">Methodology &amp; Research Process</h4>
+                <br>
+                <!-- Data Collection -->
+                <p class="text-justify">In order to determine the underlying causes of the problem addressed by The Brides Project, our team used various methods to gather detailed and comprehensive data. We relied heavily on contextual inquiry, a user-centered research method, and this methodology required us to conduct several semi-structured interviews with stakeholders of TBP.</p>
+                <p class="text-justify">We formally interviewed a total of 5 TBP stakeholders, all of whom were women: the director, the store manager, two volunteer bridal consultants, and one volunteer seamstress. We also conducted 2 informal interviews with volunteers in the bridal shop, and these lasted roughly 10 minutes. The interviews allowed us to gather insights from employees at all levels in the organization. </p>
+                <p class="text-justify">Another important aspect of our data-collection process was observations. While we were in the bridal shop for the interviews, we were constantly aware of the activity that was occurring around us. We also observed an entire shift of a volunteer in order to better understand the consultant process and the relationships between consultants and customers. During these observations, we also collected artifacts that are housed at the front desk or are given away as promotional materials. </p>
+                <p class="text-justify">The director also provided us with multiple spreadsheets, which included sales data, customer satisfaction surveys and results, and volunteer schedules. </p>
+                <p class="text-justify">Each member of the team also conducted secondary research and wrote detailed reports on topics related to The Brides Project in order to further prepare us for our work ahead: staffing models, the nonprofit sector, volunteer satisfaction and retention, customer queuing experience and market segregation of TBP and other bridal shops. This research provided us with background information regarding themes and issues related to our client and their identified challenges.</p>
+                <br>
+                <!-- Analysis -->
+                <p class="text-justify"> Following each interview, we held interpretation sessions to discuss our findings and generate affinity wall notes. Each note contained one idea obtained from the interview, and overall, we generated about 300 notes. Notes with similar ideas were grouped together and labeled with key themes. This process was repeated multiple times until we generate 4 key themes. These key themes became the core of our overall findings which guided how we developed recommendations.
+                  </p>
+                <p class="text-justify"> We also conducted a content analysis of the TBP’s Facebook and Instagram accounts. We analyzed each post and the overall theme of their social media in order to determine what type of information TBP shares with consumers, how they communicate with their customers, and how they use the platforms to recruit and retain volunteers. Together, we discussed the effectiveness of their current approaches to social media. </p>
+                <br>
+                <!-- Findings -->
+                <p class="text-justify"><strong>Finding 1: It is TBP’s uniqueness of circumstance that allows them to stand out from other bridal shops</strong> </p>
+                <ul>
+                  <li class="text-justify">The key differences between TBP and normal bridal shops include: <i>low budget operations, informal in-store etiquette, and much cheaper but still high-quality service.</i> Compared to other bridal shops, the alteration service at TBP is more flexible, which helps close sales.</li>
+                  <li class="text-justify">Although they have a grassroots approach to social media, word-of-mouth communication, and special events, they still raise awareness and interest. This is the main reason why TBP’s <i>primary market is still limited to Michigan.</i></li>
+                  <li class="text-justify">TBP’s great cause/<i>mission to fight cancer</i> is what both attracts volunteers and brides, which helps both with donations and volunteer recruitment.</li>
+                </ul>
+                <br>
+                <p class="text-justify"><strong>Finding 2: The quality relationships between management and volunteers, and between volunteers and brides drive high customer satisfaction</strong> </p>
+                <ul>
+                  <li class="text-justify">High quality products and services, volunteer and customer satisfaction, and tailoring of needs for different brides creates a <i>friendly atmosphere</i> that encompasses both formal store policy but also informal and personable interactions.</li>
+                  <li class="text-justify">Management is receptive to the opinions and needs of their volunteers and maintain a friendly relationship that <i>subverts the hierarchy of the organization.</i> Establishing this rapport improves cooperation over each strata and contributes to a more successful organization.</li>
+                  <li class="text-justify">Anticipating the various needs of the brides (dress size, comfortability, adjusting hours) are ways that volunteers <i>go above and beyond</i> to serve customers.</li>
+                  <li class="text-justify"><i>Volunteers have diverse skills and busy outside-lives</i> that management takes into account and uses to maximize efficiency and service.</li>
+                </ul>
+                <br>
+                <p class="text-justify"><strong>Finding 3: Some day to day operations are the main sources of frustration and need improvement</strong> </p>
+                <ul>
+                  <li class="text-justify">The primary negative human interaction is with negative and picky brides, but rarely is it between volunteers.</li>
+                  <li class="text-justify"><i>Volunteers support each other both mentally and professionally.</i> Usually, two consultants will be present at the store, and they not only serve their own clients, but also help each other when needed. Additionally, they sometimes
+                    share their frustrations with the organization and customers.</li>
+                  <li class="text-justify">Anticipating the various needs of the brides (dress size, comfortability, adjusting hours) are ways that volunteers <i>go above and beyond</i> to serve customers.</li>
+                  <li class="text-justify">The lack of an optimal staffing model is preventing TBP from adding stable open hours to meet growing demands. <i>Both volunteers and management think extending open hours is good but are struggling to figure out the optimal open hours.</i>                    Currently, volunteers are required to take a minimum of 2 2-hour shifts per month. During peak hours, volunteers often work more than 2 hours per shift and find it hard to leave in the middle of an appointment.</li>
+                  <li class="text-justify"><i>Identified areas for improvement include technology, communication, attention to walk-ins, and consistent follow-up procedures.</i> TBP is planning on introducing a new computer system to streamline the check-out process, such as card-wired internet. While there is a personal follow-up, there seems to be no consistent professional follow-up procedure with customers.</li>
+                  <li class="text-justify"><i>Some key frustrations are infrastructure, closing sales procedures, and bureaucracy.</i> TBP experienced three major leaking issues at the store. The closing-sales procedure is a constant source of frustration for a variety of reasons. There is less and maybe inferior communication with walk-ins versus appointment brides. There is currently no tracking of walk-in customers’ satisfaction. A volunteer feels that sometimes the CSC management does not know what brides need and does not pay enough attention the critical issues at the store. Volunteers think adding walk-in customers is fine and does not impact overall customer satisfaction.</li>
+                </ul>
+                <br>
+                <p class="text-justify"><strong>Finding 4: TBP emphasizes the recruitment, training, and retention of its volunteers</strong> </p>
+                <ul>
+                  <li class="text-justify">Most volunteers hear about volunteering at TBP through <i>word of mouth</i>; however, some learn about volunteering opportunities on online <i>volunteer websites</i>. Some volunteers do not believe that online recruitment is an effective way to recruit more volunteers.</li>
+                  <li class="text-justify">TBP training is <i>extensive, engaging, and flexible</i> but still has room for improvement. The key elements of training are shadowing and mentoring, and the volunteers believe that this personal nature in training allows for flexibility in the training and creates a system of support for new volunteers. However, because training is not always consistent, some volunteers are unaware of the store’s basic operations or policies.</li>
+                  <li class="text-justify"><i>Management is accommodating and not overbearing</i> on their volunteers because they want to keep volunteers engaged and satisfied. This allows them to keep a healthy base of long term volunteers.</li>
+                  <li class="text-justify">Management believes that TBP needs to <i>increase their volunteer base.</i></li>
+                  <li class="text-justify">Besides their shifts, volunteers mainly <i>interact with each other via email and not in person.</i></li>
+                </ul>
+                <br>
+                <p class="text-justify"><strong>Finding 5: Optimal open hours cannot be determined before there’s a solid base of volunteers, and documenting walk-in customer satisfaction could be helpful in future decision-making</strong> </p>
+                <ul>
+                  <li class="text-justify"><i>Volunteers schedule their shifts on the pre-determined schedule</i> set by the store manager.</li>
+                  <li class="text-justify"><i>Store operations are mostly run by volunteers,</i> most of whom are flexible to work on weekend.</li>
+                  <li class="text-justify">Walk-in customers contribute to ⅓ of the sales in dresses, but there is <i>not a satisfaction survey for walk-in customers.</i> The store manager expressed interest in having this type of survey in the future.</li>
+                </ul>
+                <br>
+                <h4 class="text-left text-capitalize">Recommendations</h4>
+                <br>
+                <!-- TBP's Operation Model -->
+                <p class="text-justify"> Thanks to the ongoing cycle of the operation model, TBP has experienced an ever-increasing customer demand for the past year. TBP’s unique operation model has worked successfully thanks to the great efforts from volunteers. Volunteers play a fundamental role in TBP’s product and service deliveries, which enable TBP to operate at the low-cost model. Following the expansion of store open hours and service to walk-in customers, recruiting more volunteers and maintaining a stable volunteer base has become more critical to TBP’s long-term success. </p>
+                <p class="text-justify"> To address the findings from the interviews and help TBP have sustainable growth, we therefore present four recommendations below: </p>
+                <p class="text-justify"><strong>Recommendation 1: Strengthen Social Media Presence</strong> </p>
+                <p class="text-left text-capitalize"> Purpose </p>
+                <p class="text-justify"> In the fast-paced digital age, social media has become an important tool in the spread of information: a tool that many businesses and organizations must learn to effectively utilize. Social media platforms are important for reaching out to potential customers, creating volunteer bonds, and recruiting future volunteers. Given people’s reliance on social media nowadays, TBP must brand themselves to showcase their business. This would attract both potential customers and
+                  volunteers. Moreover, TBP’s cause can be further highlighted on these platforms. Emphasizing its uniqueness as a non-profit organization that supports cancer will help it stand out from other bridal shops. </p>
+                <p class="text-left text-capitalize">
+                Status quo and area of improvement </p>
+                <p class="text-justify">Currently, TBP runs 2 social media pages: Facebook and Instagram. It uses Facebook to announce extra open hours, promote special sales events, and share volunteer stories and experiences. As for Instagram, TBP uses it as a platform to post photographs of brides who purchased their gowns from TBP and other miscellaneous content. However, TBP’s uniqueness as a cancer-support NPO is not emphasized well. In addition, no recruitment information can be found despite the increasing demand for volunteers. There does not appear to be a standard operational process or screening mechanism for its online social media strategies. For instance, many of the photos posted are either of low definition or lack consistency with the overall style, formatting, and thematic aesthetic. Furthermore, posts are released at random times of the day or at the very last minute of promoted events. </p>
+                <p class="text-justify">Given Instagram’s rising importance as a platform for advertising, particularly amongst younger age groups who might forego the CSC or TBP website in favor of social media, emphasis must be placed on social media as possibly the strongest ways to showcase TBP. </p>
+                <p class="text-left text-capitalize">Actions/Next steps</p>
+                <p class="text-justify"> <i>Through the analysis of TBP’s social media platforms, it is clear that TBP has moderate understanding of these platforms and technology. However, the true problem lies in the content. Hence, Wonder Women would provide a Social Media workshop and detailed guidelines on how to manage social media pages.</i> The following topics / advice will be covered: </p>
+                <ol>
+                  <li class="text-justify">Clarify and emphasize information regarding open hours, the mission, and its nonprofit status
+                    <ul>
+                      <li class="text-justify">Posts about extra open hours would be more effective if announced earlier and promoted heavily</li>
+                      <li class="text-justify">Emphasize how TBP is different because that is why they are successful</li>
+                      <li class="text-justify">When announcing hours, do so on the appropriate platforms (an Instagram caption leaves the post jumbled and hard to read)</li>
+                    </ul>
+                    <br> </li>
+                  <li class="text-justify"><i>Use photos that are of high definition and shows images of volunteers at work</i></li>
+                  <ul>
+                    <li class="text-justify">Only post high definition photos and images of volunteers at work shows the professionalism of TBP as a bridal shop</li>
+                    <li class="text-justify">Keep a uniform “theme” (color scheme, types of the same “I said yes to the dress!” photo, photos of dresses done in specific ways)</li>
+                    <li class="text-justify">Using cameras like DSLR’s may be a great way to ensure good quality photos every time</li>
+                    <li class="text-justify">Additionally, this work may be tasked upon consultants with good social media experience (allowing TBP to also recruit people of different skillsets.) Allowing select people to take on the main responsibilities may ensure better quality overall. Realize that many people, particularly students, may relish in this sort of role as to be able to add further marketing skills to resumes. In this sense, TBP is also providing a service to those who want to build on their skills.</li>
+                  </ul>
+                </ol>
+                <br>
+                <p class="text-justify"> With clear guidelines and examples provided, TBP can develop better understanding of content management strategies and the mechanism of how social media works. </p>
+                <br>
+                <p class="text-justify"><strong>Recommendation 3: Engage Volunteers with One Another</strong> </p>
+                <p class="text-left text-capitalize"> Purpose </p>
+                <p class="text-justify"><i>Fostering relationships between volunteers is crucial to maintaining volunteer satisfaction</i> because social integration is positively related to intent to stay, with the intermedium variable being satisfaction. Social relationships are a key element of an organization’s culture. When there are positive relationships between workers, a good organizational culture results. A positive organizational culture then leads to increased satisfaction. Furthermore, when volunteers create bonds with each other, they will keep volunteering because they do not want to break these bonds. Therefore, it is crucial that TBP does not isolate volunteers from one another and provide them the opportunities to engage with
+                  one another.</p>
+                <p class="text-justify">When satisfaction is not cultivated through social integration, burnout can occur. It is crucial to study burnout because burnout is positively related to intention to quit, and intention to quit is an “important antecedent of turnover.” Turnover is costly because an organization has to reinvest resources in recruiting and training. It is crucial that the leaders of The Brides Project learn the motivations of their volunteers and how to keep their volunteers satisfied as a way to prevent burnout and retain their workforce. This will create a solid staffing model that will allow the organization to meet the increasing demands for consultations. </p>
+                <p class="text-left text-capitalize"> Status quo and area of improvement </p>
+                <p class="text-justify">Currently, there is very little engagement between volunteers outside of their shifts. During shifts, the volunteers each work with a specific bride, but they help each other when it is busy. The other main form of interaction between volunteers occurs during training. The personal nature of training allows for an engaging bonding experience for both the trainee and the senior volunteer. Outside of the shop, the main form of communication between volunteers is via email. Usually these email interactions regard covering each other’s shifts. Furthermore, volunteers at TBP are only asked to work two two-hour shifts a month, and many times, they may work with the same individuals. TBP volunteers have busy lives, so it may be difficult to find occasions when all of the volunteers can interact with one another, but it is necessary in order to maintain satisfaction among the volunteers. There has been an attempt to schedule an all-volunteer event in the past, but the event was canceled due to lack of interest and availability.</p>
+                <p class="text-left text-capitalize">Actions/Next Steps</p>
+                <p class="text-left">[Daily Basis]</p>
+                <p class="text-justify">There are multiple options on how to engage the volunteers with one another on an ongoing basis:</p>
+                <ol>
+                  <li class="text-justify">Encourage staff to work with someone they have not worked with before and would like to get to know. In an email or announcement to the volunteers, note that this is important as a way to create a stronger sense of community between volunteers.</li>
+                  <li class="text-justify">Volunteer-generated recognition of their peers is a way to positively engage volunteers with one another.</li>
+                  <ul>
+                    <li class="text-jusitfy">Place a box in the store, either in the breakroom or tucked away at the front desk. Volunteers can write a short (or long) note of something that they recognized another volunteer doing well, and they will place the note in the box. Occasionally, management will check the box, they will read the notes, and then privately share the positive feedback with the appropriate person. </li>
+                    <li class="text-justify">Examples of types of recognition volunteers can give their peers include something the volunteer did well, something they overcame, a creative endeavor, or a time when a volunteer went “above and beyond” their expected duties.</li>
+                    <li clss="text-left">Peer recognition is valuable. This process is both a way of connecting volunteers and recognizing their important work, each of which are ways of keeping volunteers satisfied.</li>
+                  </ul>
+                </ol>
+                <br>
+                <li class="text-justify">[Annual and Biannual]</li>
+                <p class="text-justify">In addition to engaging volunteers on a day-to-day level, annual and semi-annual events should also be implemented to accomplish this goal.</p>
+                <ol>
+                  <li class="text-justify">Organize an annual all-staff celebration away from the shop or CSC. Our team learned that this has been attempted once in the past, but it is worth trying again. In addition to being a celebration, it should also be a volunteer recognition event. Volunteer recognition is positively related to volunteer retention, so the possible benefits would outweigh the possible difficulty to find a time that works best for the store and individual schedules.</li>
+                  <ul>
+                    <li class="text-jusitfy">The event should be held at a location other than the shop or CSC as a way for the event to appear appealing and fun. Fun is an important aspect of volunteer satisfaction and retention, so it should be in a space that is attractive to the majority of the volunteers. Inquire about possible discounts TBP could receive on the status because of its nonprofit status. Possible venue locations could be restaurants, museums, or Painting With a Twist.</li>
+                    <li class="text-justify">The event with will both be a recognition of the volunteers accomplishments and a way for volunteers to get to know each other outside of a work environment.</li>
+                    <li clss="text-justify">The staff recognition should not emphasize the number of hours that were volunteered, but rather what the volunteers have contributed. For example, it can be emphasized how many gowns volunteers have helped sell and how many people these profits have helped support in the Ann Arbor community.</li>
+                  </ul>
+                  <li class="text-justify">There should be semi-annual inservices / team-bonding sessions. These sessions serve a dual-purpose, allowing for both ongoing training and engagement between volunteers.</li>
+                  <ul>
+                    <li class="text-jusitfy">Encourage as many volunteers as possible to attend.</li>
+                    <li class="text-justify">Randomly divide the volunteers in small groups and have everyone in group discussion.</li>
+                    <li clss="text-justify">A rewarding experience</li>
+                    <li class="text-justify">Something they think they do well</li>
+                    <li class="text-justify">Something they think they can work on</li>
+                    <li class="text-justify">An experience when they think they could have done something better</li>
+                    <li class="text-justify">Any other similar types of questions This allows everyone to share their experiences which fosters community. It also is a reflective process that encourages volunteers to discover their strengths and areas for improvement. This event is also a form of informal, ongoing training because volunteers are learning from one another on how to improve.</li>
+                  </ul>
+                </ol>
+                <p class="text-justify"> Note that an all-staff meeting is not recommended. Our team recognized that volunteers are busy and it can be somewhat difficult to schedule a time where the most possible people are available. Although all-staff celebrations should be implemented, all-staff meetings where important information is not recommended because it is crucial that all volunteers have the same information and understanding of procedures and policies. These meetings may also be more appropriate amongst management, who may take volunteer suggestions here and discuss further. </p>
+                <br>
+                <p class="text-justify"><strong>Recommendation 4: Recruitment Outreach</strong> </p>
+                <p class="text-left text-capitalize"> Purpose </p>
+                <p class="text-justify"> The continuation and effectiveness of volunteer recruitment outreach are critical to TBP’s sustainable success in serving more brides, driving customer satisfaction, and providing more funding to support the cancer community. </p>
+                <p class="text-justify">
+                TBP has experienced an ever-increasing customer demand. To serve more customers, although leveraging on the existing volunteer base is a plausible solution for the short-term, it is not beneficial to the shop’s long-term success. </p>
+                <p class="text-justify"> The efforts spent on enhancing recruiting outreach can not only increase customer’s satisfaction, but also help prevent volunteers from burning out. With more volunteer consultants in the store, the average time consultants spend with each bride can increase. Walk-in customers can then be better taken care of. Additionally, volunteers can cover each other at ease when the store is busy. </p>
+                <p class="text-left text-capitalize"> Status quo and area of improvement </p>
+                <p class="text-justify"> Although TBP has gradually developed its reputation as a volunteer-based bridal salon in Ann Arbor, the effectiveness of volunteer outreach has room for improvement. Currently, volunteer recruiting is mainly through word-of-mouth. TBP also reaches potential candidates through its official website, the CSC, social media, and local Media, such as MLive. </p>
+                <p class="text-justify"> We see a limited connection between TBP and the University of Michigan (UM) community and the greater Ann Arbor community. Not many people at UM are aware of this community engagement opportunity. One volunteer we met at the store is a UM undergraduate student. She found this opportunity because she proactively looked for a social impact opportunity. Although one sample is not representative, it shows that TBP could have done more to actively reach people who may have an interest, rather than waiting for them to self-discover TBP. </p>
+                <p class="text-justify"> Additionally, TBP’s content strategy on its Facebook page could be further enhanced. Currently, it is focused on marketing to customers but has relatively few volunteer-centric posts that aim to communicate the great value that volunteers bring to TBP and motivate people to join. Also, we noticed that TBP could have conveyed messages to potential volunteers along with those to customers and donors. </p>
+                <!--PIC-->
+                <p class="text-center"><i>A flyer that could be used to reach both gown donors and volunteer candidates</i> </p>
+                <!--PIC-->
+                <p class="text-center"> <i>The volunteer sign-up form on TBP’s official website</i> </p>
+                <p class="text-justify"> Finally, we discovered that TBP provides a volunteer sign-up form on the official website. In the form, TBP recruits not only bridal consultants, but also other positions, such as outreach, social media, and events. However, people would not know about the various volunteer opportunities if they did not visit the official website and enter the page of volunteer sign-up form. </p>
+                <p class="text-left text-capitalize"> Actions/Next Steps </p>
+                <p class="text-justify"> To apply the classic marketing funnel to the volunteer outreach communication strategies, we believe TBP should focus on driving the awareness and interest of potential volunteer candidates. First of all, it is essential to identify the target volunteer segments, understand their preferences and motivations well, and design target outreach programs accordingly. We identified two potential target segments for TBP: </p>
+                <!-- PIC -->
+                <p class="text-left"> <i>Emily UM student</i> </p>
+                <ul>
+                  <li class="text-justify">Interested in applying what she learns in class to impact projects</li>
+                  <li class="text-justify">Her schedule is less flexible and mostly occupied by the school work</li>
+                </ul>
+                <!-- PIC -->
+                <p class="text-left"><i>Annie Resident in Ann Arbor</i></p>
+                <ul>
+                  <li class="text-justify">Passion for community engagement</li>
+                  <li class="text-justify">Apart from her family duty, she may have a manageable job that allows her to participate community events</li>
+                </ul>
+                <p class="text-justify"><strong>Generate Volunteer-Centric Content on Social Media</strong> </p>
+                <p class="text-justify"> We recommend that TBP include more information regarding current volunteers: </p>
+                <ul>
+                  <li class="text-justify">Highlighting volunteers’ importance and recognizing their value helps with volunteer retention</li>
+                  <li class="text-justify">Use quotes of why people volunteer as the title or the hook of the post to attract potential candidates’ attention</li>
+                  <li class="text-justify">Include information with the type of work volunteers will do, on-board training, and time commitment along with their professional looks</li>
+                  <li class="text-justify">Whenever possible, link recruitment forms to social media posts</li>
+                  <li class="text-justify">Encourage volunteers to spread the word by sharing social media posts from TBP pages and tag people in the posts/photos to gain more exposure</li>
+                </ul>
+                <!--PIC-->
+                <p class="text-center"> <i>This is an example of an image, with a great volunteer portrait, that could be used to show professionalism of volunteers, retain volunteers by recognizing their importance and impact, or to recruit volunteers by using quotes of why people volunteer at TBP.</i> </p>
+                <br>
+                <p class="text-justify"><strong>Enhance Community Involvement</strong> </p>
+                <p class="text-justify"> While creating more volunteer-centric social media content, TBP can strengthen the connection with the University of Michigan community and the Greater Ann Arbor community: </p>
+                <ol>
+                  <li class="text-justify">Increase UM community’s awareness and familiarity with TBP and Cancer Support Community (CSC). Some ideas we came up with include:</li>
+                  <ul>
+                    <li class="text-justify">Post information about the organizations on UM websites: For example, we found a UM career page providing contact information of local non-profit organizations, to which students can reach out. Furthermore, reach out to honor and service societies at UM who take on a variety of different service opportunities yearly</li>
+                    <li class="text-justify">Organize recruitments events on campus, particularly in places where interest may be higher. For example, the med school and health center see many pre-med undergraduates who may want to perform service in a field that may directly benefit a medical cause</li>
+                    <li class="text-justify">Propose project ideas to schools’ community engagement programs or client-based courses. Service Week and Alternative Spring Break (ASB) are two fundamental projects at the School of Information. During the programs, students would utilize their expertise in data science, design, and archives to brainstorm a solution that impacts organizations. Also, client-based courses are another option. Additionally, the Community Consulting Club at the Ross School of Business works on pro-bono projects that address business issues</li>
+                  </ul>
+                  <li class="text-justify">Participate more in community events in Ann Arbor. We found TBP’s flyer at the shop at UM Football Game Beer Garden. The flyer itself emphasized gown donations but could have included the volunteer outreach information and the link to the volunteer sign-up page at TBP official website. TBP can also consider participating events such as:</li>
+                  <ul>
+                    <li class="text-justify">Set up a stall at Farmers Market to introduce TBP and CSC to event attendants, which may require TBP to pull a volunteer from availability to work in the shop; therefore, TBP must consider the opportunity cost</li>
+                  </ul>
+                </ol>
+                <br>
+                <h4 class="text-left text-capitalize">Conclusion</h4>
+                <p class="text-justify"> Through contextual inquiry, we sought to address The Bride’s Projects desire to determine optimal open hours and staffing model. In addition to many findings, our team ultimately discovered that in order to determine optimal open hours, the organization must recruit more volunteers. TBP should strengthen its social media presence, make the shop feel more homey, engage volunteers with each other, and emphasize its volunteer recruitment outreach as a way to increase volunteer
+                  satisfaction and customer demand. </p>
+                <p class="text-justify"> If The Brides Project implements our recommendations, in addition to fixing the technical issues in the shop, the organization will continue to increase its volunteer and customer base. This will generate greater profits, which ultimately will ensure that more adults and children affected by cancer in the Ann Arbor community will receive the help and resources they need to best deal with their circumstance. </p>
+                <p class="text-justify"> A limitation of this study was that our contact with customers was minimal. Part of determining optimal open hours would have required interviews with customers, as optimal open hours requires a balance of the needs of TBP and customers. This required our analysis and recommendations to be internal of the organization. Furthermore, the interviewees were picked by the director, so these volunteers may not be fully representative of volunteers’ opinions and experiences.Given the work schedule and hours of TBP, it was also difficult to observe and interview at times when the shop was busy, not allowing us to see the full dynamic of the shop. Despite these limitations, our team was still able to address the problem and generate recommendations that will benefit The Brides Project, and as a result, the customers and Ann Arbor community. </p>
+                <br>
+                <h4 class="text-left text-capitalize">Takeaway</h4>
+                <p class="text-justify"> This is my first time to work on a truly multidisciplinary team, which is both cross-cultural and cross-profession. However, contrary to the barrier I expected, my team, Wonder Women, worked very well together, from the start to the end. One of the key element that leads to the success of work is that we trust and respect each members’ profession. </p>
+                <p class="text-justify"> There are 4 members in our team – two are Library and Archive students who are native speakers in English while the other two non-native members focuses on HCI with knowledge and background in economics or business. We figure out problem as a team but work independently on what we’re proficient in before we meet to synthesize our output. </p>
+                <p class="text-justify"> In addition, through the project with TBP, we really learn how to think critically and analyze problems rationally. Surprisingly, it turned out that the problem we found about TBP was not the original problem TBP asked us to solve since there was more data that they have to do to collect in order to figure out the solutions to their original problem. I’m very proud of my team for being able to think outside the box and identify the real problem and solutions that our client should look into. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Portfolio Modal 3 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2>AthleteJuvo</h2>
+                <h3 class="text-capitalize text-center">Interaction Design &amp; UX Research</h3>
+                <p class="item-intro text-muted text-left">Gamification solution for student athlete rehabilitation exercises and social support.</p>
+                <h4 class="text-left text-capitalize">Project Overview</h4>
+                <br>
+                <p class="text-justify">Student-athletes usually experience psychological issues during their injured period, which play important roles in their rehabilitation. The three major challenges are loss of identity, isolation, and inability to understand and communicate their recovery progress between checkups. To assist the injured athletes, we propose AthleteJuvo, a collaborative gaming solution incorporating routine rehabilitation exercises, team competition, and social supports. Specifically, AthleteJuvo utilizes the competitive nature of athletes to gamify the rehabilitation process. Athletes rebuild their identity by forming a team with other injured athletes to compete with their rival schools. AthleteJuvo also helps injured athletes meet nearby injured athletes and connect back with their non-injured team members by sending challenges. To aid in recovery, AthleteJuvo uses wearable sensing fabric which collect and report movement data to the athlete’s therapist.</p>
+                <br>
+                <h4 class="text-left text-capitalize">Problem Statement</h4>
+                <br>
+                <p class="text-justify"> For student athletes, getting injured is not only about physical influence. While scholars pointed out that the stressors a student-athlete experiences usually stem from performance; injury, which influences their performance directly, becomes one of the major concerns for student athletes. </p>
+                <p class="text-justify"> Injuries influence athletes not only psychologically but also socially. Since most of an athlete’s daily schedule is team-centered, once they get injured, they miss the social interactions they would have had otherwise. Without their regular training and practice, athletes also miss the element of competition in their lives. According to the Mind, Body, and Sport handbook, only 63% of the student-athletes indicated a willingness to ask for help if they have any mental health concerns. </p>
+                <p class="text-justify"> Therefore, our goal is to help injured athletes overcome the psychological issues and strengthen the social support and information they need during their rehabilitation. The key problems we aim to solve are: (1) the isolation and the feeling of uselessness during the injured period; (2) the inconvenient methods of getting advice from athletes with similar experience; (3) the lack of support and interaction from their team members; (4) demotivation by the inability to know their rehabilitation progress. </p>
+                <br>
+                <h4 class="text-left text-capitalize">Initial User Research</h4>
+                <p class="text-justify"> To understand the problems injured athletes encountered in a broader sense, we conducted an online survey where the access was limited to injured athletes only. To get an in-depth understanding of the rehabilitation experience of injured athletes, we held eight semi-structured interviews in this initial stage, including two expert interviews and six user interviews. </p>
+                <p class="item-intro text-muted">Check out my life in ballroom dance club.</p>
+                <img class="img-responsive img-centered" src="img\portfolio\ntubdc compete.jpg" alt="">
+                <p>Ballroom Dance Club of National Taiwan University (NTUBDC) competed in the College Cup and won 2nd place out of 20+ colleges around Taiwan. I also won the 6th place in chacha and jive.</p>
+                <img class="img-responsive img-centered" src="img\portfolio\Christmas 2拷貝.jpg"
+                  alt="">
+                <p>I was the Multimedia Officer of NTUBDC from 2015/7~2016/6.</p>
+                <p>Feel free to follow us on
+                  <a href="https://zh-tw.facebook.com/NTU.Dancing/">our Facebook Page</a>.</p>
+                <button type="button" class="btn btn-primary" data-dismiss="modal"> <i class="fa fa-times"></i>Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Portfolio Modal 4 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2>All About the Stage</h2>
+                <p class="item-intro text-muted">Singing, dancing, acting, cheerleading and more!</p>
+                <img class="img-responsive img-centered" src="img\portfolio\11052888_10206462860353771_4880900748454857307_o.jpg" alt="">
+                <p>2016:
+                  <a href="http://blog.xuite.net/goest.tsai/ballroomdance/418280108">Worth it</a>
+                </p>
+                <p>2015:
+                  <a href="https://www.youtube.com/watch?v=WrhRh6CH0rc">Lo So Che Finira</a>/
+                  <a href="http://blog.xuite.net/goest.tsai/ballroomdance/352173166">September</a>/
+                  <a href="https://www.youtube.com/watch?v=eJThtwCFXLI">Pop Dance</a>
+                  <a href="https://www.youtube.com/watch?v=97pDpSPBSfI">Musical</a>
+                </p>
+                <p>2014:
+                  <a href="https://www.youtube.com/watch?v=qmGSNwcWxF0">Cheerleading</a>
+                </p>
+                <button type="button" class="btn btn-primary" data-dismiss="modal"> <i class="fa fa-times"></i>Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Portfolio Modal 5 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2>Abdomen Inflation</h2>
+                <p class="item-intro text-muted">New-comer in marketing.</p>
+                <img class="img-responsive img-centered" src="img\portfolio\5-8如果主人都腹舒 那我們就能接吻了.jpg" alt="">
+                <p>11 days countdown: Encourage people to come to Econ Week and buy lunch and snacks. This way, their abdomens can be large enough to get in touch / kiss the other.</p>
+                <img src="img\portfolio\6.jpg" class="img-responsive img-centered" alt="">
+                <p>6 days countdown: Whose stomach is rumbling? The 2 girls hears the boys' stomach rumbling. The number 6 looks like an ear.</p>
+                <img src="img\portfolio\5.jpg" class="img-responsive img-centered" alt="">
+                <p>5 days countdown: Spicy hot girls with spicy hot burrito.</p>
+                <img src="img\portfolio\1.jpg" class="img-responsive img-centered" alt="">
+                <p>1 day countdown: Unveil the cover girls who only shows their back and abdomen on the banner and the logo respectively.</p>
+                <a href="https://www.facebook.com/econweekrecovery519523/?fref=ts">Facebook Page</a>
+                <p></p>
+                <button type="button" class="btn btn-primary" data-dismiss="modal"> <i class="fa fa-times"></i>Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Portfolio Modal 6 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2>Good Morning</h2>
+                <p class="item-intro text-muted">Award-winning collage &amp; poetry.</p>
+                <img class="img-responsive img-centered" src="img\portfolio\words.jpg" alt="">
+                <p>Inspiration: The designated theme was, "Living arts in our lives." I chose the action of frying an egg for a loved one in the morning and describe the actions as a plot in kongfu movies.</p>
+                <img class="img-responsive img-centered" src="img\portfolio\universe of words.jpg"
+                  alt="">
+                <p>Collage made with Photoshop.</p>
+                <h2>VS x City Image</h2>
+                <p class="item-intro text-muted">Combine the features of 5 different cites from 5 different continents with a brand.</p>
+                <img class="img-responsive img-centered" src="img\portfolio\vic majuro.jpg" alt="">
+                <p>I was in charge of the city Majuro, Republic of Marshall Islands. The dominant color is tiffany green while the recessive colors are navy, white and green.</p>
+                <img src="img\portfolio\majuro analysis.jpg" class="img-responsive">
+                <p>A triangle bralette without thick padding is the best choice for a vaction to a tropical island. Strappy and adjustable back along with sporty elastic band adds enough support to the boobs. With the cute pandunus pattern on it, the bralette
+                  can be worn as a single item and is easy to go with any plain shirt.</p>
+                <img src="img\portfolio\color ana.jpg" class="img-responsive">
+                <p>Five different cities are located in different parts of the PCCS color system. Since the city image of Majuro is relaxing, marine and tropical, it belongs to the bright tone grouping.
+                  <img src="img\portfolio\map.jpg" class="img-responsive"> </p>
+                <p>Colors used are dotted on the world map.</p>
+                <img src="img\portfolio\top.jpg" class="img-responsive">
+                <p></p>
+                <p>↑ Top(Edited/Original): The pandunus pattern is used since it's one of the most common plants on the Marshall islands, which adds a tropical feeling to the bralette.</p>
+                <p>
+                  <img src="img\portfolio\under.jpg" class="img-responsive">↑ Bottom(Edited/Original)</p>
+                <h2>300 Days of Microsoft</h2>
+                <p class="item-intro text-muted">Microsoft Internship Sharing.</p>
+                <img class="img-responsive img-centered" src="img\portfolio\video cover.jpg" alt="">
+                <p>
+                  <a href="https://www.youtube.com/watch?v=t2yVKp64Avc">Click in</a>to watch the video on Youtube. I was chosen as three of the representatives to share what I had learned during my one-year internship at Microsoft with MBA Students of University of Pittsburgh.</p>
+                <img class="img-responsive img-centered"
+                  src="img\portfolio\ntu sharing.jpg" alt="">
+                <p>
+                  <a href="https://www.youtube.com/watch?v=wRSFFWlR_4k">Here</a>is the Chinese version of the internship sharing video, filmed during the information session of 2016 Microsoft Intern Recruitment at National Taiwan University. More stories are shared in this video. Enjoy :)</p>
+                <!-- Project Details Go Here -->
+                <h2>In &amp; Out: the Ballroom</h2>
+                <p class="item-intro text-muted">Check out my life in ballroom dance club.</p>
+                <img class="img-responsive img-centered" src="img\portfolio\ntubdc compete.jpg" alt="">
+                <p>Ballroom Dance Club of National Taiwan University (NTUBDC) competed in the College Cup and won 2nd place out of 20+ colleges around Taiwan. I also won the 6th place in chacha and jive.</p>
+                <img class="img-responsive img-centered" src="img\portfolio\Christmas 2拷貝.jpg"
+                  alt="">
+                <p>I was the Multimedia Officer of NTUBDC from 2015/7~2016/6.</p>
+                <p>Feel free to follow us on
+                  <a href="https://zh-tw.facebook.com/NTU.Dancing/">our Facebook Page</a>.</p>
+                <button type="button" class="btn btn-primary" data-dismiss="modal"> <i class="fa fa-times"></i>Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- jQuery -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+  <!-- Theme JavaScript -->
+  <script src="js/agency.min.js"></script>
 </body>
 
 </html>
